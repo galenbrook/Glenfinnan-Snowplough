@@ -1,0 +1,2445 @@
+System Information
+------------------
+
+Raspberry Pi 4 Model B Rev 1.2
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+
+Raspberry Pi reference 2024-11-19
+Generated using pi-gen, https://github.com/RPi-Distro/pi-gen, 891df1e21ed2b6099a2e6a13e26c91dea44b34d4, stage4
+
+Linux raspberrypi 6.12.20+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19) aarch64 GNU/Linux
+Revision	: b03112
+Serial		: 100000009d256a1f
+Model		: Raspberry Pi 4 Model B Rev 1.2
+Throttled flag  : throttled=0x0
+Camera          : supported=0 detected=0, libcamera interfaces=0
+
+Videocore information
+---------------------
+
+Mar 19 2025 18:24:21 
+Copyright (c) 2012 Broadcom
+version ca6e8171a80ea46924ffaa629250bfb482f3a02c (clean) (release) (start)
+
+alloc failures:     0
+compactions:        0
+legacy block fails: 0
+
+
+Filesystem information
+----------------------
+Filesystem     1K-blocks    Used Available Use% Mounted on
+udev              674060       0    674060   0% /dev
+tmpfs             189060    1376    187684   1% /run
+/dev/mmcblk0p2  30082288 7685152  20848844  27% /
+tmpfs             945284   39976    905308   5% /dev/shm
+tmpfs               5120      16      5104   1% /run/lock
+/dev/mmcblk0p1    522230   69422    452808  14% /boot/firmware
+tmpfs             189056      48    189008   1% /run/user/1000
+
+Filename				Type		Size		Used		Priority
+/var/swap                               file		524284		356376		-2
+
+Package version information
+---------------------------
+raspberrypi-ui-mods:
+  Installed: 1.20250318
+raspberrypi-sys-mods:
+  Installed: 20241202
+openbox:
+  Installed: 3.6.1-10+rpt1
+lxpanel:
+  Installed: 0.10.1-2+rpt22
+pcmanfm:
+  Installed: 1.3.2-1+rpt29
+rpd-plym-splash:
+  Installed: 0.42
+
+Networking Information
+----------------------
+
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether m.m.m.m  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet x.x.x.x  netmask x.x.x.x
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 176  bytes 14906 (14.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 176  bytes 14906 (14.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet x.x.x.x  netmask x.x.x.x  broadcast x.x.x.x
+        inet6 y::y.y.y.y  prefixlen 64  scopeid 0x20<link>
+        ether m.m.m.m  txqueuelen 1000  (Ethernet)
+        RX packets 30981  bytes 31105411 (29.6 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10509  bytes 2041088 (1.9 MiB)
+        TX errors 0  dropped 16 overruns 0  carrier 0  collisions 0
+
+
+USB Information
+---------------
+
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/1p, 480M
+    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+        |__ Port 3: Dev 3, If 0, Class=Hub, Driver=hub/3p, 12M
+            |__ Port 1: Dev 5, If 0, Class=Human Interface Device, Driver=usbhid, 12M
+            |__ Port 1: Dev 5, If 1, Class=Human Interface Device, Driver=usbhid, 12M
+        |__ Port 4: Dev 4, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+
+Display Information
+-------------------
+
+Running (F)KMS and X
+
+Screen 0: minimum 16 x 16, current 1920 x 1080, maximum 32767 x 32767
+XWAYLAND0 connected 1920x1080+0+0 (0x23) normal (normal left inverted right x axis y axis) 480mm x 270mm
+	Identifier: 0x21
+	Timestamp:  11555
+	Subpixel:   unknown
+	Gamma:      1.0:1.0:1.0
+	Brightness: 0.0
+	Clones:    
+	CRTC:       0
+	CRTCs:      0
+	Transform:  1.000000 0.000000 0.000000
+	            0.000000 1.000000 0.000000
+	            0.000000 0.000000 1.000000
+	           filter: 
+	RANDR Emulation: 1 
+	non-desktop: 0 
+		supported: 0, 1
+  1920x1080 (0x23) 173.000MHz -HSync +VSync *current +preferred
+        h: width  1920 start 2048 end 2248 total 2576 skew    0 clock  67.16KHz
+        v: height 1080 start 1083 end 1088 total 1120           clock  59.96Hz
+  1440x1080 (0x24) 129.000MHz -HSync +VSync
+        h: width  1440 start 1528 end 1680 total 1920 skew    0 clock  67.19KHz
+        v: height 1080 start 1083 end 1087 total 1120           clock  59.99Hz
+  1400x1050 (0x25) 121.750MHz -HSync +VSync
+        h: width  1400 start 1488 end 1632 total 1864 skew    0 clock  65.32KHz
+        v: height 1050 start 1053 end 1057 total 1089           clock  59.98Hz
+  1280x1024 (0x26) 109.000MHz -HSync +VSync
+        h: width  1280 start 1368 end 1496 total 1712 skew    0 clock  63.67KHz
+        v: height 1024 start 1027 end 1034 total 1063           clock  59.89Hz
+  1280x960 (0x27) 101.250MHz -HSync +VSync
+        h: width  1280 start 1360 end 1488 total 1696 skew    0 clock  59.70KHz
+        v: height  960 start  963 end  967 total  996           clock  59.94Hz
+  1152x864 (0x28) 81.750MHz -HSync +VSync
+        h: width  1152 start 1216 end 1336 total 1520 skew    0 clock  53.78KHz
+        v: height  864 start  867 end  871 total  897           clock  59.96Hz
+  1024x768 (0x29) 63.500MHz -HSync +VSync
+        h: width  1024 start 1072 end 1176 total 1328 skew    0 clock  47.82KHz
+        v: height  768 start  771 end  775 total  798           clock  59.92Hz
+  800x600 (0x2a) 38.250MHz -HSync +VSync
+        h: width   800 start  832 end  912 total 1024 skew    0 clock  37.35KHz
+        v: height  600 start  603 end  607 total  624           clock  59.86Hz
+  640x480 (0x2b) 23.750MHz -HSync +VSync
+        h: width   640 start  664 end  720 total  800 skew    0 clock  29.69KHz
+        v: height  480 start  483 end  487 total  500           clock  59.38Hz
+  320x240 (0x2c)  6.000MHz -HSync +VSync
+        h: width   320 start  336 end  360 total  400 skew    0 clock  15.00KHz
+        v: height  240 start  243 end  247 total  252           clock  59.52Hz
+  1680x1050 (0x2d) 146.250MHz -HSync +VSync
+        h: width  1680 start 1784 end 1960 total 2240 skew    0 clock  65.29KHz
+        v: height 1050 start 1053 end 1059 total 1089           clock  59.95Hz
+  1440x900 (0x2e) 106.500MHz -HSync +VSync
+        h: width  1440 start 1528 end 1672 total 1904 skew    0 clock  55.93KHz
+        v: height  900 start  903 end  909 total  934           clock  59.89Hz
+  1280x800 (0x2f) 83.500MHz -HSync +VSync
+        h: width  1280 start 1352 end 1480 total 1680 skew    0 clock  49.70KHz
+        v: height  800 start  803 end  809 total  831           clock  59.81Hz
+  720x480 (0x30) 26.750MHz -HSync +VSync
+        h: width   720 start  744 end  808 total  896 skew    0 clock  29.85KHz
+        v: height  480 start  483 end  493 total  500           clock  59.71Hz
+  640x400 (0x31) 20.000MHz -HSync +VSync
+        h: width   640 start  664 end  720 total  800 skew    0 clock  25.00KHz
+        v: height  400 start  403 end  409 total  417           clock  59.95Hz
+  320x200 (0x32)  5.000MHz -HSync +VSync
+        h: width   320 start  336 end  360 total  400 skew    0 clock  12.50KHz
+        v: height  200 start  203 end  209 total  212           clock  58.96Hz
+  1600x900 (0x33) 118.250MHz -HSync +VSync
+        h: width  1600 start 1696 end 1856 total 2112 skew    0 clock  55.99KHz
+        v: height  900 start  903 end  908 total  934           clock  59.95Hz
+  1368x768 (0x34) 85.250MHz -HSync +VSync
+        h: width  1368 start 1440 end 1576 total 1784 skew    0 clock  47.79KHz
+        v: height  768 start  771 end  781 total  798           clock  59.88Hz
+  1280x720 (0x35) 74.500MHz -HSync +VSync
+        h: width  1280 start 1344 end 1472 total 1664 skew    0 clock  44.77KHz
+        v: height  720 start  723 end  728 total  748           clock  59.86Hz
+  1024x576 (0x36) 46.500MHz -HSync +VSync
+        h: width  1024 start 1064 end 1160 total 1296 skew    0 clock  35.88KHz
+        v: height  576 start  579 end  584 total  599           clock  59.90Hz
+  864x486 (0x37) 32.500MHz -HSync +VSync
+        h: width   864 start  888 end  968 total 1072 skew    0 clock  30.32KHz
+        v: height  486 start  489 end  494 total  506           clock  59.92Hz
+  720x400 (0x38) 22.250MHz -HSync +VSync
+        h: width   720 start  744 end  808 total  896 skew    0 clock  24.83KHz
+        v: height  400 start  403 end  413 total  417           clock  59.55Hz
+  640x350 (0x39) 17.500MHz -HSync +VSync
+        h: width   640 start  664 end  720 total  800 skew    0 clock  21.88KHz
+        v: height  350 start  353 end  363 total  366           clock  59.77Hz
+
+Connector 0 (33) HDMI-A-1 (connected)
+  Encoder 0 (32) TMDS
+    Crtc 3 (100) 1920x1080@60.00 148.500 1920/88/44/148/+ 1080/4/5/36/+ 60 (60.00) P|D 
+      Plane 3 (89) fb-id: 724 (crtcs: 3) 0,0 1920x1080 -> 0,0 1920x1080 (XR24 AR24 AB24 XB24 RG16 BG16 AR15 XR15 RG24 BG24 YU16 YV16 YU24 YV24 YU12 YV12 NV12 NV21 NV16 NV61 P030 XR30 AR30 AB30 XB30 RGB8 BGR8 XR12 AR12 XB12 AB12 BX12 BA12 RX12 RA12)
+        FB 724 1920x1080 XR24
+      Plane 57 (686) fb-id: 726 (crtcs: 3) 0,0 64x64 -> 1519,445 64x64 (XR24 AR24 AB24 XB24 RG16 BG16 AR15 XR15 RG24 BG24 YU16 YV16 YU24 YV24 YU12 YV12 NV12 NV21 NV16 NV61 P030 XR30 AR30 AB30 XB30 RGB8 BGR8 XR12 AR12 XB12 AB12 BX12 BA12 RX12 RA12)
+        FB 726 64x64 AR24
+Connector 1 (42) HDMI-A-2 (disconnected)
+  Encoder 1 (41) TMDS
+
+Connector 0 (33) HDMI-A-1 (connected)
+   0 1920x1080@60.00  148.500 1920/88/44/148/+   1080/4/5/36/+      60 (60.00) P|D   
+   1 1920x1080@60.00  148.500 1920/88/44/148/+   1080/4/5/36/+      60 (60.00) D     16:9
+   2 1920x1080@59.94  148.352 1920/88/44/148/+   1080/4/5/36/+      60 (59.94) D     16:9
+   3 1920x1080@50.00  148.500 1920/528/44/148/+  1080/4/5/36/+      50 (50.00) D     
+   4 1920x1080@50.00  148.500 1920/528/44/148/+  1080/4/5/36/+      50 (50.00) D     16:9
+   5 1680x1050@59.88  119.000 1680/48/32/80/+    1050/3/6/21/-      60 (59.88) D     
+   6 1600x900@60.00   108.000 1600/24/80/96/+    900/1/3/96/+       60 (60.00) D     
+   7 1280x1024@60.02  108.000 1280/48/112/248/+  1024/1/3/38/+      60 (60.02) D     
+   8 1440x900@59.90    88.750 1440/48/32/80/+    900/3/6/17/-       60 (59.90) D     
+   9 1280x800@59.91    71.000 1280/48/32/80/+    800/3/6/14/-       60 (59.91) D     
+  10 1280x720@60.00    74.250 1280/110/40/220/+  720/5/5/20/+       60 (60.00) D     
+  11 1280x720@60.00    74.250 1280/110/40/220/+  720/5/5/20/+       60 (60.00) D     16:9
+  12 1280x720@59.94    74.176 1280/110/40/220/+  720/5/5/20/+       60 (59.94) D     16:9
+  13 1280x720@50.00    74.250 1280/440/40/220/+  720/5/5/20/+       50 (50.00) D     
+  14 1280x720@50.00    74.250 1280/440/40/220/+  720/5/5/20/+       50 (50.00) D     16:9
+  15 1024x768@60.00    65.000 1024/24/136/160/-  768/3/6/29/-       60 (60.00) D     
+  16 800x600@60.32     40.000 800/40/128/88/+    600/1/4/23/+       60 (60.32) D     
+  17 720x576@50.00     27.000 720/12/64/68/-     576/5/5/39/-       50 (50.00) D     16:9
+  18 720x576@50.00     27.000 720/12/64/68/-     576/5/5/39/-       50 (50.00) D     4:3
+  19 720x480@60.00     27.027 720/16/62/60/-     480/9/6/30/-       60 (60.00) D     4:3
+  20 720x480@60.00     27.027 720/16/62/60/-     480/9/6/30/-       60 (60.00) D     16:9
+  21 720x480@59.94     27.000 720/16/62/60/-     480/9/6/30/-       60 (59.94) D     
+  22 720x480@59.94     27.000 720/16/62/60/-     480/9/6/30/-       60 (59.94) D     16:9
+  23 720x480@59.94     27.000 720/16/62/60/-     480/9/6/30/-       60 (59.94) D     4:3
+  24 640x480@60.00     25.200 640/16/96/48/-     480/10/2/33/-      60 (60.00) D     4:3
+  25 640x480@59.94     25.175 640/16/96/48/-     480/10/2/33/-      60 (59.94) D     
+  26 720x400@70.08     28.320 720/18/108/54/-    400/12/2/35/+      70 (70.08) D     
+
+HDMI0:             HDMI_HOTPLUG = 0x00000001
+HDMI1:             HDMI_HOTPLUG = 0x00000000
+
+/sys/kernel/debug/dri/1/state:
+plane[46]: plane-0
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=0
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[65]: plane-1
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=0
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[77]: plane-2
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=0
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[89]: plane-3
+	crtc=pixelvalve-2
+	fb=722
+		allocated by = labwc
+		refcount=2
+		format=XR24 little-endian (0x34325258)
+		modifier=0x0
+		size=1920x1080
+		layers:
+			size[0]=1920x1080
+			pitch[0]=7680
+			offset[0]=0
+			obj[0]:
+				name=0
+				refcount=3
+				start=001003f5
+				size=8294400
+				imported=no
+				dma_addr=0x00000000cf000000
+				vaddr=0000000026cc5726
+	crtc-pos=1920x1080+0+0
+	src-pos=1920.000000x1080.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[101]: plane-4
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=0
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[113]: plane-5
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=0
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[125]: plane-6
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[136]: plane-7
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=2
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[147]: plane-8
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=3
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[158]: plane-9
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=4
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[169]: plane-10
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=5
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[180]: plane-11
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=6
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[191]: plane-12
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=7
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[202]: plane-13
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=8
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[213]: plane-14
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=9
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[224]: plane-15
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=a
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[235]: plane-16
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=b
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[246]: plane-17
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=c
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[257]: plane-18
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=d
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[268]: plane-19
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=e
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[279]: plane-20
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=f
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[290]: plane-21
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=10
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[301]: plane-22
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[312]: plane-23
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=2
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[323]: plane-24
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=3
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[334]: plane-25
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=4
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[345]: plane-26
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=5
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[356]: plane-27
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=6
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[367]: plane-28
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=7
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[378]: plane-29
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=8
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[389]: plane-30
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=9
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[400]: plane-31
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=a
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[411]: plane-32
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=b
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[422]: plane-33
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=c
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[433]: plane-34
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=d
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[444]: plane-35
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=e
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[455]: plane-36
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=f
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[466]: plane-37
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=10
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[477]: plane-38
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=11
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[488]: plane-39
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=12
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[499]: plane-40
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=13
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[510]: plane-41
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=14
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[521]: plane-42
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=15
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[532]: plane-43
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=16
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[543]: plane-44
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=17
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[554]: plane-45
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=18
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[565]: plane-46
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=19
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[576]: plane-47
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1a
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[587]: plane-48
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1b
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[598]: plane-49
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1c
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[609]: plane-50
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1d
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[620]: plane-51
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1e
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[631]: plane-52
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1f
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[642]: plane-53
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=20
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[653]: plane-54
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=11
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[664]: plane-55
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=11
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[675]: plane-56
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=11
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[686]: plane-57
+	crtc=pixelvalve-2
+	fb=726
+		allocated by = labwc
+		refcount=3
+		format=AR24 little-endian (0x34325241)
+		modifier=0x0
+		size=64x64
+		layers:
+			size[0]=64x64
+			pitch[0]=256
+			offset[0]=0
+			obj[0]:
+				name=0
+				refcount=3
+				start=001013d0
+				size=16384
+				imported=no
+				dma_addr=0x00000000ce4c4000
+				vaddr=00000000f5d4fe3c
+	crtc-pos=64x64+1520+445
+	src-pos=64.000000x64.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=1
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[697]: plane-58
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=11
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+plane[708]: plane-59
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=1
+	normalized-zpos=11
+	color-encoding=ITU-R BT.709 YCbCr
+	color-range=YCbCr limited range
+	color_mgmt_changed=0
+crtc[57]: txp
+	enable=0
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=0
+	encoder_mask=0
+	mode: "": 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+crtc[76]: pixelvalve-0
+	enable=0
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=0
+	encoder_mask=0
+	mode: "": 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+crtc[88]: pixelvalve-1
+	enable=0
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=0
+	encoder_mask=0
+	mode: "": 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+crtc[100]: pixelvalve-2
+	enable=1
+	active=1
+	self_refresh_active=0
+	planes_changed=1
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=200000000000008
+	connector_mask=1
+	encoder_mask=1
+	mode: "1920x1080": 60 148500 1920 2008 2052 2200 1080 1084 1089 1125 0x48 0x5
+crtc[112]: pixelvalve-4
+	enable=0
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=0
+	encoder_mask=0
+	mode: "": 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+crtc[124]: pixelvalve-3
+	enable=0
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=0
+	encoder_mask=0
+	mode: "": 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+connector[33]: HDMI-A-1
+	crtc=pixelvalve-2
+	self_refresh_aware=0
+	max_requested_bpc=8
+	colorspace=Default
+	broadcast_rgb=Automatic
+	is_limited_range=y
+	output_bpc=8
+	output_format=RGB
+	tmds_char_rate=148500000
+connector[42]: HDMI-A-2
+	crtc=(null)
+	self_refresh_aware=0
+	max_requested_bpc=8
+	colorspace=Default
+	broadcast_rgb=Automatic
+	is_limited_range=n
+	output_bpc=0
+	output_format=RGB
+	tmds_char_rate=0
+connector[63]: Writeback-1
+	crtc=(null)
+	self_refresh_aware=0
+	max_requested_bpc=0
+	colorspace=Default
+HVS State
+	Core Clock Rate: 137600000
+	Channel 0
+		in use=1
+		load=137600000
+	Channel 1
+		in use=0
+		load=0
+	Channel 2
+		in use=0
+		load=0
+
+
+
+Audio Information
+-------------------
+
+**** List of PLAYBACK Hardware Devices ****
+card 0: Headphones [bcm2835 Headphones], device 0: bcm2835 Headphones [bcm2835 Headphones]
+  Subdevices: 8/8
+  Subdevice #0: subdevice #0
+  Subdevice #1: subdevice #1
+  Subdevice #2: subdevice #2
+  Subdevice #3: subdevice #3
+  Subdevice #4: subdevice #4
+  Subdevice #5: subdevice #5
+  Subdevice #6: subdevice #6
+  Subdevice #7: subdevice #7
+card 1: vc4hdmi0 [vc4-hdmi-0], device 0: MAI PCM i2s-hifi-0 [MAI PCM i2s-hifi-0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 2: vc4hdmi1 [vc4-hdmi-1], device 0: MAI PCM i2s-hifi-0 [MAI PCM i2s-hifi-0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+
+null
+    Discard all samples (playback) or generate zero samples (capture)
+default
+    Playback/recording through the PulseAudio sound server
+lavrate
+    Rate Converter Plugin Using Libav/FFmpeg Library
+samplerate
+    Rate Converter Plugin Using Samplerate Library
+speexrate
+    Rate Converter Plugin Using Speex Resampler
+jack
+    JACK Audio Connection Kit
+oss
+    Open Sound System
+pulse
+    PulseAudio Sound Server
+speex
+    Plugin using Speex DSP (resample, agc, denoise, echo, dereverb)
+upmix
+    Plugin for channel upmix (4,6,8)
+vdownmix
+    Plugin for channel downmix (stereo) with a simple spacialization
+hw:CARD=Headphones,DEV=0
+    bcm2835 Headphones, bcm2835 Headphones
+    Direct hardware device without any conversions
+plughw:CARD=Headphones,DEV=0
+    bcm2835 Headphones, bcm2835 Headphones
+    Hardware device with all software conversions
+sysdefault:CARD=Headphones
+    bcm2835 Headphones, bcm2835 Headphones
+    Default Audio Device
+dmix:CARD=Headphones,DEV=0
+    bcm2835 Headphones, bcm2835 Headphones
+    Direct sample mixing device
+usbstream:CARD=Headphones
+    bcm2835 Headphones
+    USB Stream Output
+hw:CARD=vc4hdmi0,DEV=0
+    vc4-hdmi-0, MAI PCM i2s-hifi-0
+    Direct hardware device without any conversions
+plughw:CARD=vc4hdmi0,DEV=0
+    vc4-hdmi-0, MAI PCM i2s-hifi-0
+    Hardware device with all software conversions
+sysdefault:CARD=vc4hdmi0
+    vc4-hdmi-0, MAI PCM i2s-hifi-0
+    Default Audio Device
+hdmi:CARD=vc4hdmi0,DEV=0
+    vc4-hdmi-0, MAI PCM i2s-hifi-0
+    HDMI Audio Output
+dmix:CARD=vc4hdmi0,DEV=0
+    vc4-hdmi-0, MAI PCM i2s-hifi-0
+    Direct sample mixing device
+usbstream:CARD=vc4hdmi0
+    vc4-hdmi-0
+    USB Stream Output
+hw:CARD=vc4hdmi1,DEV=0
+    vc4-hdmi-1, MAI PCM i2s-hifi-0
+    Direct hardware device without any conversions
+plughw:CARD=vc4hdmi1,DEV=0
+    vc4-hdmi-1, MAI PCM i2s-hifi-0
+    Hardware device with all software conversions
+sysdefault:CARD=vc4hdmi1
+    vc4-hdmi-1, MAI PCM i2s-hifi-0
+    Default Audio Device
+hdmi:CARD=vc4hdmi1,DEV=0
+    vc4-hdmi-1, MAI PCM i2s-hifi-0
+    HDMI Audio Output
+dmix:CARD=vc4hdmi1,DEV=0
+    vc4-hdmi-1, MAI PCM i2s-hifi-0
+    Direct sample mixing device
+usbstream:CARD=vc4hdmi1
+    vc4-hdmi-1
+    USB Stream Output
+
+● pipewire.socket - PipeWire Multimedia System Sockets
+     Loaded: loaded (/usr/lib/systemd/user/pipewire.socket; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-04-01 12:15:10 BST; 58min ago
+   Triggers: ● pipewire.service
+     Listen: /run/user/1000/pipewire-0 (Stream)
+             /run/user/1000/pipewire-0-manager (Stream)
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/pipewire.socket
+
+Apr 01 12:15:10 raspberrypi systemd[710]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+
+● pipewire.service - PipeWire Multimedia Service
+     Loaded: loaded (/usr/lib/systemd/user/pipewire.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-04-01 12:15:10 BST; 58min ago
+TriggeredBy: ● pipewire.socket
+   Main PID: 726 (pipewire)
+      Tasks: 3 (limit: 1579)
+        CPU: 121ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/session.slice/pipewire.service
+             └─726 /usr/bin/pipewire
+
+Apr 01 12:15:10 raspberrypi systemd[710]: Started pipewire.service - PipeWire Multimedia Service.
+
+○ pulseaudio.service - Sound Service
+     Loaded: loaded (/usr/lib/systemd/user/pulseaudio.service; enabled; preset: enabled)
+     Active: inactive (dead)
+TriggeredBy: ○ pulseaudio.socket
+
+○ pulseaudio.socket - Sound System
+     Loaded: loaded (/usr/lib/systemd/user/pulseaudio.socket; enabled; preset: enabled)
+     Active: inactive (dead)
+   Triggers: ● pulseaudio.service
+     Listen: /run/user/1000/pulse/native (Stream)
+
+Server String: /run/user/1000/pulse/native
+Library Protocol Version: 35
+Server Protocol Version: 35
+Is Local: yes
+Client Index: 86
+Tile Size: 65472
+User Name: glenfinnan
+Host Name: raspberrypi
+Server Name: PulseAudio (on PipeWire 1.2.7)
+Server Version: 15.0.0
+Default Sample Specification: float32le 2ch 48000Hz
+Default Channel Map: front-left,front-right
+Default Sink: alsa_output.platform-fe00b840.mailbox.stereo-fallback
+Default Source: alsa_output.platform-fe00b840.mailbox.stereo-fallback.monitor
+Cookie: 3186:f81f
+
+config.txt
+----------
+
+arm_64bit=1
+arm_boost=1
+arm_freq=1500
+audio_pwm_mode=514
+auto_initramfs=1
+camera_auto_detect=1
+config_hdmi_boost=5
+core_freq=500
+core_freq_min=200
+disable_commandline_tags=2
+disable_fw_kms_setup=1
+disable_l2cache=1
+disable_overscan=1
+display_auto_detect=1
+display_hdmi_rotate=-1
+display_lcd_rotate=-1
+dvfs=3
+enable_gic=1
+force_eeprom_read=1
+force_pwm_open=1
+framebuffer_ignore_alpha=1
+framebuffer_swap=1
+gpu_freq=500
+gpu_freq_min=250
+init_uart_clock=0x2dc6c00
+initial_turbo=60
+lcd_framerate=60
+mask_gpu_interrupt0=3072
+mask_gpu_interrupt1=25635
+max_framebuffers=2
+over_voltage_avs=-17500
+pause_burst_frames=1
+pciex4_reset=1
+pmic_turbo_threshold=600
+program_serial_random=1
+total_mem=2048
+hdmi_force_cec_address:0=65535
+hdmi_force_cec_address:1=65535
+hdmi_pixel_freq_limit:0=0x11e1a300
+hdmi_pixel_freq_limit:1=0x11e1a300
+device_tree=-
+overlay_prefix=overlays/
+hdmi_cvt:0=
+hdmi_cvt:1=
+hdmi_edid_filename:0=
+hdmi_edid_filename:1=
+hdmi_timings:0=
+hdmi_timings:1=
+
+cmdline.txt
+-----------
+coherent_pool=1M 8250.nr_uarts=0 snd_bcm2835.enable_headphones=0 cgroup_disable=memory numa_policy=interleave snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_hdmi=0  smsc95xx.macaddr=DC:A6:32:BE:3E:35 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  console=ttyS0,115200 console=tty1 root=PARTUUID=8d38a99e-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles cfg80211.ieee80211_regdom=GB
+
+pin configuration
+-----------------
+
+ 0: ip    pu | hi // ID_SDA/GPIO0 = input
+ 1: ip    pu | hi // ID_SCL/GPIO1 = input
+ 2: ip    pu | hi // GPIO2 = input
+ 3: ip    pu | hi // GPIO3 = input
+ 4: ip    pu | hi // GPIO4 = input
+ 5: ip    pu | hi // GPIO5 = input
+ 6: ip    pu | hi // GPIO6 = input
+ 7: ip    pu | hi // GPIO7 = input
+ 8: ip    pu | hi // GPIO8 = input
+ 9: ip    pd | lo // GPIO9 = input
+10: ip    pd | lo // GPIO10 = input
+11: ip    pd | lo // GPIO11 = input
+12: ip    pd | lo // GPIO12 = input
+13: ip    pd | lo // GPIO13 = input
+14: ip    pn | hi // GPIO14 = input
+15: ip    pu | hi // GPIO15 = input
+16: ip    pd | lo // GPIO16 = input
+17: ip    pd | lo // GPIO17 = input
+18: ip    pd | lo // GPIO18 = input
+19: ip    pd | lo // GPIO19 = input
+20: ip    pd | lo // GPIO20 = input
+21: ip    pd | lo // GPIO21 = input
+22: ip    pd | lo // GPIO22 = input
+23: ip    pd | lo // GPIO23 = input
+24: ip    pd | lo // GPIO24 = input
+25: ip    pd | lo // GPIO25 = input
+26: ip    pd | lo // GPIO26 = input
+27: ip    pd | lo // GPIO27 = input
+28: a5    pu | hi // RGMII_MDIO/GPIO28 = RGMII_MDIO
+29: a5    pd | lo // RGMIO_MDC/GPIO29 = RGMII_MDC
+30: a3    pu | lo // CTS0/GPIO30 = CTS0
+31: a3    pn | lo // RTS0/GPIO31 = RTS0
+32: a3    pn | hi // TXD0/GPIO32 = TXD0
+33: a3    pu | hi // RXD0/GPIO33 = RXD0
+34: a3    pn | hi // SD1_CLK/GPIO34 = SD1_CLK
+35: a3    pu | hi // SD1_CMD/GPIO35 = SD1_CMD
+36: a3    pu | hi // SD1_DATA0/GPIO36 = SD1_DAT0
+37: a3    pu | hi // SD1_DATA1/GPIO37 = SD1_DAT1
+38: a3    pu | hi // SD1_DATA2/GPIO38 = SD1_DAT2
+39: a3    pu | hi // SD1_DATA3/GPIO39 = SD1_DAT3
+40: a0    pn | lo // PWM0_MISO/GPIO40 = PWM1_0
+41: a0    pn | lo // PWM1_MOSI/GPIO41 = PWM1_1
+42: op -- pu | hi // STATUS_LED_G_CLK/GPIO42 = output
+43: ip    pu | hi // SPIFLASH_CE_N/GPIO43 = input
+44: ip    pu | hi // SDA0/GPIO44 = input
+45: ip    pu | hi // SCL0/GPIO45 = input
+46: ip    pu | lo // RGMII_RXCLK/GPIO46 = input
+47: ip    pu | lo // RGMII_RXCTL/GPIO47 = input
+48: ip    pd | lo // RGMII_RXD0/GPIO48 = input
+49: ip    pd | lo // RGMII_RXD1/GPIO49 = input
+50: ip    pd | lo // RGMII_RXD2/GPIO50 = input
+51: ip    pd | lo // RGMII_RXD3/GPIO51 = input
+52: ip    pd | lo // RGMII_TXCLK/GPIO52 = input
+53: ip    pd | lo // RGMII_TXCTL/GPIO53 = input
+54: ip    pd | lo // RGMII_TXD0/GPIO54 = input
+55: ip    pd | lo // RGMII_TXD1/GPIO55 = input
+56: ip    pd | lo // RGMII_TXD2/GPIO56 = input
+57: ip    pd | lo // RGMII_TXD3/GPIO57 = input
+
+vcdbg log messages
+------------------
+
+004512.001: arasan: arasan_emmc_open
+004512.172: arasan: arasan_emmc_set_clock C0: 0x00800000 C1: 0x000e0047 emmc: 200000000 actual: 390625 div: 0x00000100 target: 400000 min: 400000 max: 400000 delay: 5
+004616.959: arasan: arasan_emmc_set_clock C0: 0x00800000 C1: 0x000e0047 emmc: 200000000 actual: 390625 div: 0x00000100 target: 400000 min: 400000 max: 400000 delay: 5
+004617.046: arasan: arasan_emmc_set_clock C0: 0x00800f00 C1: 0x000e0047 emmc: 200000000 actual: 390625 div: 0x00000100 target: 400000 min: 390000 max: 400000 delay: 5
+004647.504: boot-part: 0 fs-type: 0
+004647.515: boot-part: 0 fs-type: 3
+004647.653: arasan: arasan_emmc_set_clock C0: 0x00800f06 C1: 0x000e0207 emmc: 200000000 actual: 50000000 div: 0x00000002 target: 50000000 min: 0 max: 50000000 delay: 1
+004795.431: brfs: File read: /mfs/sd/config.txt
+004796.184: brfs: File read: 1247 bytes
+004878.433: HDMI1:EDID error reading EDID block 0 attempt 0
+004879.449: HDMI1:EDID giving up on reading EDID block 0
+004885.810: brfs: File read: /mfs/sd/config.txt
+005646.366: gpioman: gpioman_get_pin_num: pin DISPLAY_DSI_PORT not defined
+005647.122: gpioman: gpioman_get_pin_num: pin DISPLAY_DSI_PORT not defined
+005649.273: *** Restart logging
+005649.294: brfs: File read: 1247 bytes
+005716.124: hdmi: HDMI1:EDID error reading EDID block 0 attempt 0
+005717.142: hdmi: HDMI1:EDID giving up on reading EDID block 0
+005722.182: hdmi: HDMI1:EDID error reading EDID block 0 attempt 0
+005723.197: hdmi: HDMI1:EDID giving up on reading EDID block 0
+005723.216: hdmi: HDMI:hdmi_get_state is deprecated, use hdmi_get_display_state instead
+005723.232: HDMI0: hdmi_pixel_encoding: 300000000
+005723.244: HDMI1: hdmi_pixel_encoding: 300000000
+008824.136: brfs: File read: /mfs/sd/initramfs8
+008824.166: Loaded 'initramfs8' to 0x0 size 0xcadf7e
+008843.869: initramfs loaded to 0x2e352000 (size 0xcadf7e)
+008853.657: dtb_file 'bcm2711-rpi-4-b.dtb'
+008853.692: brfs: File read: 13295486 bytes
+008867.903: brfs: File read: /mfs/sd/bcm2711-rpi-4-b.dtb
+008867.936: Loaded 'bcm2711-rpi-4-b.dtb' to 0x100 size 0xdb93
+008902.337: brfs: File read: 56211 bytes
+008920.629: brfs: File read: /mfs/sd/overlays/overlay_map.dtb
+008978.622: brfs: File read: 5555 bytes
+008983.279: brfs: File read: /mfs/sd/config.txt
+008983.493: dtparam: audio=on
+008996.749: brfs: File read: 1247 bytes
+009021.689: brfs: File read: /mfs/sd/overlays/vc4-kms-v3d-pi4.dtbo
+009180.427: Loaded overlay 'vc4-kms-v3d-pi4'
+009596.754: brfs: File read: 3913 bytes
+009600.842: brfs: File read: /mfs/sd/cmdline.txt
+009600.940: Read command line from file 'cmdline.txt':
+009600.973: 'console=serial0,115200 console=tty1 root=PARTUUID=8d38a99e-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles cfg80211.ieee80211_regdom=GB'
+009975.401: brfs: File read: 176 bytes
+011884.792: brfs: File read: /mfs/sd/kernel8.img
+011884.835: Loaded 'kernel8.img' to 0x200000 size 0x94df19
+015208.666: Device tree loaded to 0x2e343e00 (size 0xe192)
+015216.037: gpioman: gpioman_get_pin_num: pin SDCARD_CONTROL_POWER not defined
+015320.646: sdram: sdram refresh 1562->6248 (1)
+016276.896: vchiq_core: vchiq_init_state: slot_zero = 0xce480000, is_master = 1
+016283.268: TV service:host side not connected, dropping notification 0x00000002, 0x00000001, 0x00000010
+2639852.913: sdram: sdram refresh 1562->3124 (2)
+2640869.674: sdram: sdram refresh 1562->6248 (1)
+2641885.938: sdram: sdram refresh 1562->3124 (2)
+2644934.414: sdram: sdram refresh 1562->6248 (1)
+2646968.516: sdram: sdram refresh 1562->3124 (2)
+2653074.576: sdram: sdram refresh 1562->6248 (1)
+2654090.755: sdram: sdram refresh 1562->3124 (2)
+2656123.633: sdram: sdram refresh 1562->6248 (1)
+2657139.815: sdram: sdram refresh 1562->3124 (2)
+2666306.821: sdram: sdram refresh 1562->6248 (1)
+2668340.165: sdram: sdram refresh 1562->3124 (2)
+2669356.317: sdram: sdram refresh 1562->6248 (1)
+2672414.193: sdram: sdram refresh 1562->3124 (2)
+2722286.313: sdram: sdram refresh 1562->6248 (1)
+2727409.655: sdram: sdram refresh 1562->3124 (2)
+2731474.203: sdram: sdram refresh 1562->6248 (1)
+2732502.869: sdram: sdram refresh 1562->3124 (2)
+2733521.165: sdram: sdram refresh 1562->6248 (1)
+2734537.319: sdram: sdram refresh 1562->3124 (2)
+2748788.112: sdram: sdram refresh 1562->6248 (1)
+2749816.301: sdram: sdram refresh 1562->3124 (2)
+2900910.941: sdram: sdram refresh 1562->6248 (1)
+2901943.665: sdram: sdram refresh 1562->3124 (2)
+2902977.653: sdram: sdram refresh 1562->6248 (1)
+2908128.048: sdram: sdram refresh 1562->3124 (2)
+2909159.185: sdram: sdram refresh 1562->6248 (1)
+3112416.024: sdram: sdram refresh 1562->3124 (2)
+3115464.454: sdram: sdram refresh 1562->6248 (1)
+3116480.607: sdram: sdram refresh 1562->3124 (2)
+3152230.723: sdram: sdram refresh 1562->6248 (1)
+3153246.868: sdram: sdram refresh 1562->3124 (2)
+3154263.024: sdram: sdram refresh 1562->6248 (1)
+3158368.541: sdram: sdram refresh 1562->3124 (2)
+3159402.549: sdram: sdram refresh 1562->6248 (1)
+3248037.075: sdram: sdram refresh 1562->3124 (2)
+3249054.391: sdram: sdram refresh 1562->6248 (1)
+3258216.111: sdram: sdram refresh 1562->3124 (2)
+3260250.264: sdram: sdram refresh 1562->6248 (1)
+3272580.653: sdram: sdram refresh 1562->3124 (2)
+3273596.813: sdram: sdram refresh 1562->6248 (1)
+3276645.249: sdram: sdram refresh 1562->3124 (2)
+3277663.257: sdram: sdram refresh 1562->6248 (1)
+
+dmesg log
+---------
+
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd083]
+[    0.000000] Linux version 6.12.20+rpt-rpi-v8 (serge@raspberrypi.com) (aarch64-linux-gnu-gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT Debian 1:6.12.20-1+rpt1~bpo12+1 (2025-03-19)
+[    0.000000] KASLR enabled
+[    0.000000] random: crng init done
+[    0.000000] Machine model: Raspberry Pi 4 Model B Rev 1.2
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: created CMA memory pool at 0x000000000e000000, size 512 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x000000000e000000..0x000000002dffffff (524288 KiB) map reusable linux,cma
+[    0.000000] OF: reserved mem: 0x000000003ef66200..0x000000003ef665ef (0 KiB) nomap non-reusable nvram@0
+[    0.000000] NUMA: Faking a node at [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x7fbdbf80-0x7fbdec7f]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000]   DMA32    [mem 0x0000000040000000-0x000000007fffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000003b3fffff]
+[    0.000000]   node   0: [mem 0x0000000040000000-0x000000007fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000] On node 0, zone DMA32: 19456 pages in unavailable ranges
+[    0.000000] percpu: Embedded 33 pages/cpu s95064 r8192 d31912 u135168
+[    0.000000] pcpu-alloc: s95064 r8192 d31912 u135168 alloc=33*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v2
+[    0.000000] CPU features: detected: Spectre-v3a
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 1742098
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: coherent_pool=1M 8250.nr_uarts=0 snd_bcm2835.enable_headphones=0 cgroup_disable=memory numa_policy=interleave snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_hdmi=0  smsc95xx.macaddr=m.m.m.m vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  console=ttyS0,115200 console=tty1 root=PARTUUID=8d38a99e-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles cfg80211.ieee80211_regdom=GB
+[    0.000000] cgroup: Disabling memory control group subsystem
+[    0.000000] mempolicy: NUMA default policy overridden to 'interleave:0'
+[    0.000000] Unknown kernel command line parameters "splash", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 504832
+[    0.000000] Policy zone: DMA32
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] software IO TLB: area num 4.
+[    0.000000] software IO TLB: mapped [mem 0x0000000037400000-0x000000003b400000] (64MB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 45034 entries in 176 pages
+[    0.000000] ftrace: allocated 176 pages with 3 groups
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer(s) running at 54.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xc743ce346, max_idle_ns: 440795203123 ns
+[    0.000000] sched_clock: 56 bits at 54MHz, resolution 18ns, wraps every 4398046511102ns
+[    0.000167] Console: colour dummy device 80x25
+[    0.000175] printk: legacy console [tty1] enabled
+[    0.000254] Calibrating delay loop (skipped), value calculated using timer frequency.. 108.00 BogoMIPS (lpj=216000)
+[    0.000263] pid_max: default: 32768 minimum: 301
+[    0.000298] LSM: initializing lsm=capability
+[    0.000409] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.000426] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.016004] rcu: Hierarchical SRCU implementation.
+[    0.016014] rcu: 	Max phase no-delay instances is 1000.
+[    0.016174] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.016881] EFI services will not be available.
+[    0.017067] smp: Bringing up secondary CPUs ...
+[    0.017418] Detected PIPT I-cache on CPU1
+[    0.017491] CPU1: Booted secondary processor 0x0000000001 [0x410fd083]
+[    0.017866] Detected PIPT I-cache on CPU2
+[    0.017906] CPU2: Booted secondary processor 0x0000000002 [0x410fd083]
+[    0.018252] Detected PIPT I-cache on CPU3
+[    0.018293] CPU3: Booted secondary processor 0x0000000003 [0x410fd083]
+[    0.018348] smp: Brought up 1 node, 4 CPUs
+[    0.018357] SMP: Total of 4 processors activated.
+[    0.018360] CPU: All CPU(s) started at EL2
+[    0.018373] CPU features: detected: 32-bit EL0 Support
+[    0.018375] CPU features: detected: 32-bit EL1 Support
+[    0.018380] CPU features: detected: CRC32 instructions
+[    0.018412] alternatives: applying system-wide alternatives
+[    0.019338] Memory: 1342912K/2019328K available (14016K kernel code, 2252K rwdata, 4684K rodata, 5184K init, 577K bss, 146920K reserved, 524288K cma-reserved)
+[    0.019678] devtmpfs: initialized
+[    0.024329] Enabled cp15_barrier support
+[    0.024349] Enabled setend support
+[    0.024436] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.024451] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.033682] 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+[    0.033700] 0 pages in range for non-PLT usage
+[    0.033706] 517552 pages in range for PLT usage
+[    0.033884] pinctrl core: initialized pinctrl subsystem
+[    0.034165] DMI not present or invalid.
+[    0.035988] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.036716] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+[    0.036821] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.036990] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.037020] audit: initializing netlink subsys (disabled)
+[    0.037140] audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+[    0.037392] thermal_sys: Registered thermal governor 'step_wise'
+[    0.037419] cpuidle: using governor menu
+[    0.037526] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.037580] ASID allocator initialised with 32768 entries
+[    0.038041] Serial: AMBA PL011 UART driver
+[    0.040803] /soc/interrupt-controller@40041000: Fixed dependency cycle(s) with /soc/interrupt-controller@40041000
+[    0.041253] bcm2835-mbox fe00b880.mailbox: mailbox enabled
+[    0.048135] raspberrypi-firmware soc:firmware: Attached to firmware from 2025-03-19T18:24:21, variant start
+[    0.052137] raspberrypi-firmware soc:firmware: Firmware hash is ca6e8171a80ea46924ffaa629250bfb482f3a02c
+[    0.057680] /scb/pcie@7d500000: Fixed dependency cycle(s) with /scb/pcie@7d500000
+[    0.057792] /scb/pcie@7d500000: Fixed dependency cycle(s) with /scb/pcie@7d500000
+[    0.061089] bcm2835-dma fe007000.dma-controller: DMA legacy API manager, dmachans=0x1
+[    0.061878] iommu: Default domain type: Translated
+[    0.061883] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.062803] SCSI subsystem initialized
+[    0.062887] usbcore: registered new interface driver usbfs
+[    0.062906] usbcore: registered new interface driver hub
+[    0.062925] usbcore: registered new device driver usb
+[    0.063120] pps_core: LinuxPPS API ver. 1 registered
+[    0.063124] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.063131] PTP clock support registered
+[    0.063758] vgaarb: loaded
+[    0.064024] clocksource: Switched to clocksource arch_sys_counter
+[    0.064258] VFS: Disk quotas dquot_6.6.0
+[    0.064271] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.071623] NET: Registered PF_INET protocol family
+[    0.071900] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.073090] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.073120] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.073129] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.073187] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    0.073676] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.073855] MPTCP token hash table entries: 2048 (order: 3, 49152 bytes, linear)
+[    0.073933] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.073953] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.074064] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.074489] RPC: Registered named UNIX socket transport module.
+[    0.074496] RPC: Registered udp transport module.
+[    0.074499] RPC: Registered tcp transport module.
+[    0.074502] RPC: Registered tcp-with-tls transport module.
+[    0.074505] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.074518] PCI: CLS 0 bytes, default 64
+[    0.077395] kvm [1]: nv: 554 coarse grained trap handlers
+[    0.077666] kvm [1]: IPA Size Limit: 44 bits
+[    0.078295] kvm [1]: vgic interrupt IRQ9
+[    0.078322] kvm [1]: Hyp nVHE mode initialized successfully
+[    0.078870] Trying to unpack rootfs image as initramfs...
+[    0.349876] Freeing initrd memory: 12980K
+[    0.537264] Initialise system trusted keyrings
+[    0.537557] workingset: timestamp_bits=42 max_order=19 bucket_order=0
+[    0.537957] NFS: Registering the id_resolver key type
+[    0.537970] Key type id_resolver registered
+[    0.537973] Key type id_legacy registered
+[    0.537984] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.537988] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.538346] Key type asymmetric registered
+[    0.538352] Asymmetric key parser 'x509' registered
+[    0.538383] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+[    0.538486] io scheduler mq-deadline registered
+[    0.538491] io scheduler kyber registered
+[    0.538508] io scheduler bfq registered
+[    0.539000] irq_brcmstb_l2: registered L2 intc (/soc/interrupt-controller@7ef00100, parent irq: 23)
+[    0.540567] pinctrl-bcm2835 fe200000.gpio: GPIO_OUT persistence: yes
+[    0.548899] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.549752] brcm-pcie fd500000.pcie: host bridge /scb/pcie@7d500000 ranges:
+[    0.549771] brcm-pcie fd500000.pcie:   No bus range found for /scb/pcie@7d500000, using [bus 00-ff]
+[    0.549789] brcm-pcie fd500000.pcie:      MEM 0x0600000000..0x063fffffff -> 0x00c0000000
+[    0.549809] brcm-pcie fd500000.pcie:   IB MEM 0x0000000000..0x007fffffff -> 0x0400000000
+[    0.550865] brcm-pcie fd500000.pcie: PCI host bridge to bus 0000:00
+[    0.550892] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.550900] pci_bus 0000:00: root bus resource [mem 0x600000000-0x63fffffff] (bus address [0xc0000000-0xffffffff])
+[    0.550978] pci 0000:00:00.0: [14e4:2711] type 01 class 0x060400 PCIe Root Port
+[    0.550997] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.551005] pci 0000:00:00.0:   bridge window [mem 0x638000000-0x6380fffff]
+[    0.551060] pci 0000:00:00.0: PME# supported from D0 D3hot
+[    0.552827] pci_bus 0000:01: supply vpcie3v3 not found, using dummy regulator
+[    0.552922] pci_bus 0000:01: supply vpcie3v3aux not found, using dummy regulator
+[    0.552947] pci_bus 0000:01: supply vpcie12v not found, using dummy regulator
+[    0.656036] brcm-pcie fd500000.pcie: clkreq-mode set to default
+[    0.658102] brcm-pcie fd500000.pcie: link up, 5.0 GT/s PCIe x1 (SSC)
+[    0.658226] pci 0000:01:00.0: [1106:3483] type 00 class 0x0c0330 PCIe Endpoint
+[    0.658281] pci 0000:01:00.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+[    0.658394] pci 0000:01:00.0: PME# supported from D0 D3cold
+[    0.664098] pci 0000:00:00.0: bridge window [mem 0x600000000-0x6000fffff]: assigned
+[    0.664108] pci 0000:01:00.0: BAR 0 [mem 0x600000000-0x600000fff 64bit]: assigned
+[    0.664151] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.664157] pci 0000:00:00.0:   bridge window [mem 0x600000000-0x6000fffff]
+[    0.664164] pci_bus 0000:00: resource 4 [mem 0x600000000-0x63fffffff]
+[    0.664169] pci_bus 0000:01: resource 1 [mem 0x600000000-0x6000fffff]
+[    0.664316] pcieport 0000:00:00.0: enabling device (0000 -> 0002)
+[    0.664388] pcieport 0000:00:00.0: PME: Signaling with IRQ 27
+[    0.664582] pcieport 0000:00:00.0: AER: enabled with IRQ 27
+[    0.665113] simple-framebuffer 3e3cf000.framebuffer: framebuffer at 0x3e3cf000, 0x7f8000 bytes
+[    0.665121] simple-framebuffer 3e3cf000.framebuffer: format=a8r8g8b8, mode=1920x1080x32, linelength=7680
+[    0.665377] Console: switching to colour frame buffer device 240x67
+[    0.668726] simple-framebuffer 3e3cf000.framebuffer: fb0: simplefb registered!
+[    0.672662] iproc-rng200 fe104000.rng: hwrng registered
+[    0.672760] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+[    0.677565] brd: module loaded
+[    0.680378] loop: module loaded
+[    0.680702] Loading iSCSI transport class v2.0-870.
+[    0.682717] bcmgenet fd580000.ethernet: GENET 5.0 EPHY: 0x0000
+[    0.876066] unimac-mdio unimac-mdio.-19: Broadcom UniMAC MDIO bus
+[    0.876618] usbcore: registered new device driver r8152-cfgselector
+[    0.876637] usbcore: registered new interface driver r8152
+[    0.876658] usbcore: registered new interface driver lan78xx
+[    0.876672] usbcore: registered new interface driver smsc95xx
+[    0.877932] xhci_hcd 0000:01:00.0: enabling device (0000 -> 0002)
+[    0.877965] xhci_hcd 0000:01:00.0: xHCI Host Controller
+[    0.877979] xhci_hcd 0000:01:00.0: new USB bus registered, assigned bus number 1
+[    0.879034] xhci_hcd 0000:01:00.0: hcc params 0x002841eb hci version 0x100 quirks 0x0300240000000890
+[    0.879373] xhci_hcd 0000:01:00.0: xHCI Host Controller
+[    0.879381] xhci_hcd 0000:01:00.0: new USB bus registered, assigned bus number 2
+[    0.879390] xhci_hcd 0000:01:00.0: Host supports USB 3.0 SuperSpeed
+[    0.879484] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12
+[    0.879491] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.879496] usb usb1: Product: xHCI Host Controller
+[    0.879499] usb usb1: Manufacturer: Linux 6.12.20+rpt-rpi-v8 xhci-hcd
+[    0.879503] usb usb1: SerialNumber: 0000:01:00.0
+[    0.879778] hub 1-0:1.0: USB hub found
+[    0.879828] hub 1-0:1.0: 1 port detected
+[    0.880187] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.12
+[    0.880194] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.880198] usb usb2: Product: xHCI Host Controller
+[    0.880202] usb usb2: Manufacturer: Linux 6.12.20+rpt-rpi-v8 xhci-hcd
+[    0.880206] usb usb2: SerialNumber: 0000:01:00.0
+[    0.880402] hub 2-0:1.0: USB hub found
+[    0.880452] hub 2-0:1.0: 4 ports detected
+[    0.880926] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+[    0.880974] dwc_otg: FIQ enabled
+[    0.880977] dwc_otg: NAK holdoff enabled
+[    0.880980] dwc_otg: FIQ split-transaction FSM enabled
+[    0.880984] Module dwc_common_port init
+[    0.881362] usbcore: registered new interface driver uas
+[    0.881402] usbcore: registered new interface driver usb-storage
+[    0.881633] mousedev: PS/2 mouse device common for all mice
+[    0.883125] sdhci: Secure Digital Host Controller Interface driver
+[    0.883135] sdhci: Copyright(c) Pierre Ossman
+[    0.883234] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.883408] hid: raw HID events driver (C) Jiri Kosina
+[    0.883451] usbcore: registered new interface driver usbhid
+[    0.883455] usbhid: USB HID core driver
+[    0.887247] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 (0,8000003f) counters available
+[    0.887875] NET: Registered PF_PACKET protocol family
+[    0.887922] Key type dns_resolver registered
+[    0.899022] registered taskstats version 1
+[    0.899167] Loading compiled-in X.509 certificates
+[    0.903354] Demotion targets for Node 0: null
+[    0.903818] Key type .fscrypt registered
+[    0.903824] Key type fscrypt-provisioning registered
+[    0.907753] uart-pl011 fe201000.serial: there is not valid maps for state default
+[    0.908051] uart-pl011 fe201000.serial: cts_event_workaround enabled
+[    0.908241] fe201000.serial: ttyAMA1 at MMIO 0xfe201000 (irq = 39, base_baud = 0) is a PL011 rev3
+[    0.908366] serial serial0: tty port ttyAMA1 registered
+[    0.909459] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+[    0.909843] bcm2835-power bcm2835-power: Broadcom BCM2835 power domains driver
+[    0.910260] mmc-bcm2835 fe300000.mmcnr: mmc_debug:0 mmc_debug2:0
+[    0.910268] mmc-bcm2835 fe300000.mmcnr: DMA channel allocated
+[    0.936372] of_cfs_init
+[    0.936471] of_cfs_init: OK
+[    0.936625] clk: Disabling unused clocks
+[    0.936829] PM: genpd: Disabling unused power domains
+[    0.977167] mmc0: SDHCI controller on fe340000.mmc [fe340000.mmc] using ADMA
+[    0.983425] Freeing unused kernel memory: 5184K
+[    0.983584] Run /init as init process
+[    0.983588]   with arguments:
+[    0.983590]     /init
+[    0.983593]     splash
+[    0.983595]   with environment:
+[    0.983598]     HOME=/
+[    0.983600]     TERM=linux
+[    1.016303] mmc1: new high speed SDIO card at address 0001
+[    1.090926] mmc0: new ultra high speed DDR50 SDHC card at address aaaa
+[    1.091720] mmcblk0: mmc0:aaaa SE32G 29.7 GiB
+[    1.093783]  mmcblk0: p1 p2
+[    1.094373] mmcblk0: mmc0:aaaa SE32G 29.7 GiB (quirks 0x00004000)
+[    1.128065] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+[    1.266737] usb 1-1: New USB device found, idVendor=2109, idProduct=3431, bcdDevice= 4.21
+[    1.266762] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    1.266768] usb 1-1: Product: USB2.0 Hub
+[    1.268799] hub 1-1:1.0: USB hub found
+[    1.269046] hub 1-1:1.0: 4 ports detected
+[    1.279313] v3d fec00000.v3d: [drm] Transparent Hugepage support is recommended for optimal performance on this platform!
+[    1.286588] [drm] Initialized v3d 1.0.0 for fec00000.v3d on minor 0
+[    1.302921] Console: switching to colour dummy device 80x25
+[    1.330711] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    1.558941] EXT4-fs (mmcblk0p2): mounted filesystem a36be96c-66be-4487-a7a6-0481bca99d89 ro with ordered data mode. Quota mode: none.
+[    1.560056] usb 1-1.3: new full-speed USB device number 3 using xhci_hcd
+[    1.659709] usb 1-1.3: New USB device found, idVendor=413c, idProduct=1003, bcdDevice= 2.00
+[    1.659728] usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.659734] usb 1-1.3: Product: Dell USB Keyboard Hub
+[    1.659738] usb 1-1.3: Manufacturer: Dell
+[    1.666263] hub 1-1.3:1.0: USB hub found
+[    1.667207] hub 1-1.3:1.0: 3 ports detected
+[    1.673687] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    1.675466] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    1.744063] usb 1-1.4: new low-speed USB device number 4 using xhci_hcd
+[    1.840001] usb 1-1.4: New USB device found, idVendor=046d, idProduct=c018, bcdDevice=43.01
+[    1.840050] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.840055] usb 1-1.4: Product: USB Optical Mouse
+[    1.840059] usb 1-1.4: Manufacturer: Logitech
+[    1.846218] input: Logitech USB Optical Mouse as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.4/1-1.4:1.0/0003:046D:C018.0001/input/input0
+[    1.846447] hid-generic 0003:046D:C018.0001: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:01:00.0-1.4/input0
+[    1.847754] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    1.960052] usb 1-1.3.1: new full-speed USB device number 5 using xhci_hcd
+[    1.996702] systemd[1]: System time before build time, advancing clock.
+[    2.064394] usb 1-1.3.1: New USB device found, idVendor=413c, idProduct=2010, bcdDevice= 2.00
+[    2.064413] usb 1-1.3.1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+[    2.064418] usb 1-1.3.1: Product: Dell USB Keyboard
+[    2.064423] usb 1-1.3.1: Manufacturer: Dell
+[    2.078625] input: Dell Dell USB Keyboard as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3.1/1-1.3.1:1.0/0003:413C:2010.0002/input/input1
+[    2.093107] NET: Registered PF_INET6 protocol family
+[    2.093833] Segment Routing with IPv6
+[    2.093855] In-situ OAM (IOAM) with IPv6
+[    2.136144] systemd[1]: systemd 252.36-1~deb12u1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    2.136184] systemd[1]: Detected architecture arm64.
+[    2.143122] systemd[1]: Hostname set to <raspberrypi>.
+[    2.256583] hid-generic 0003:413C:2010.0002: input,hidraw1: USB HID v1.10 Keyboard [Dell Dell USB Keyboard] on usb-0000:01:00.0-1.3.1/input0
+[    2.258997] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    2.269542] input: Dell Dell USB Keyboard Consumer Control as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3.1/1-1.3.1:1.1/0003:413C:2010.0003/input/input2
+[    2.324270] input: Dell Dell USB Keyboard System Control as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3.1/1-1.3.1:1.1/0003:413C:2010.0003/input/input3
+[    2.324414] hid-generic 0003:413C:2010.0003: input,hidraw2: USB HID v1.10 Device [Dell Dell USB Keyboard] on usb-0000:01:00.0-1.3.1/input1
+[    2.325719] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    2.327096] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    2.328704] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    2.601734] systemd[1]: Queued start job for default target graphical.target.
+[    2.625374] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+[    2.626011] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[    2.626469] systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[    2.626786] systemd[1]: Created slice user.slice - User and Session Slice.
+[    2.626940] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[    2.627304] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[    2.627360] systemd[1]: Expecting device dev-disk-by\x2dpartuuid-8d38a99e\x2d01.device - /dev/disk/by-partuuid/8d38a99e-01...
+[    2.627388] systemd[1]: Expecting device dev-dri-card0.device - /dev/dri/card0...
+[    2.627417] systemd[1]: Expecting device dev-dri-renderD128.device - /dev/dri/renderD128...
+[    2.627472] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[    2.627555] systemd[1]: Reached target nss-user-lookup.target - User and Group Name Lookups.
+[    2.627625] systemd[1]: Reached target slices.target - Slice Units.
+[    2.627678] systemd[1]: Reached target swap.target - Swaps.
+[    2.627735] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[    2.628120] systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[    2.628267] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[    2.628796] systemd[1]: Listening on systemd-journald-audit.socket - Journal Audit Socket.
+[    2.629070] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[    2.629344] systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+[    2.632007] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    2.632263] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    2.632569] systemd[1]: dev-hugepages.mount - Huge Pages File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/mm/hugepages).
+[    2.634193] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[    2.636236] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[    2.638406] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[    2.638738] systemd[1]: auth-rpcgss-module.service - Kernel Module supporting RPCSEC_GSS was skipped because of an unmet condition check (ConditionPathExists=/etc/krb5.keytab).
+[    2.642584] systemd[1]: Starting fake-hwclock.service - Restore / save the current clock...
+[    2.644949] systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+[    2.647534] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    2.650632] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+[    2.655045] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[    2.658674] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+[    2.663457] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[    2.666588] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+[    2.671261] systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+[    2.671623] systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+[    2.676891] systemd[1]: Starting systemd-journald.service - Journal Service...
+[    2.691241] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    2.695257] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@lists.linux.dev
+[    2.695481] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[    2.699103] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[    2.702972] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[    2.703706] systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+[    2.704496] systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+[    2.705368] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[    2.706705] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    2.707160] systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+[    2.708767] systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+[    2.709272] systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+[    2.710203] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    2.711621] fuse: init (API version 7.41)
+[    2.713492] systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+[    2.715251] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[    2.715740] systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+[    2.717015] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    2.717733] systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+[    2.718659] systemd[1]: modprobe@loop.service: Deactivated successfully.
+[    2.719044] systemd[1]: Finished modprobe@loop.service - Load Kernel Module loop.
+[    2.722681] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[    2.727764] systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+[    2.728153] systemd[1]: systemd-repart.service - Repartition Root Disk was skipped because no trigger condition checks were met.
+[    2.733105] systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+[    2.734881] systemd[1]: Finished fake-hwclock.service - Restore / save the current clock.
+[    2.741837] systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+[    2.771932] EXT4-fs (mmcblk0p2): re-mounted a36be96c-66be-4487-a7a6-0481bca99d89 r/w. Quota mode: none.
+[    2.774314] i2c_dev: i2c /dev entries driver
+[    2.775933] systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+[    2.776976] systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[    2.777505] systemd[1]: systemd-firstboot.service - First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+[    2.777600] systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+[    2.788646] systemd[1]: Starting systemd-random-seed.service - Load/Save Random Seed...
+[    2.796633] systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[    2.801736] systemd[1]: Starting systemd-sysusers.service - Create System Users...
+[    2.810253] systemd[1]: Started systemd-journald.service - Journal Service.
+[    2.840639] systemd-journald[252]: Received client request to flush runtime journal.
+[    2.856961] systemd-journald[252]: File /var/log/journal/8dab24c99827432798a858e64ab68739/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[    3.559895] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    3.593283] snd_bcm2835: module is from the staging directory, the quality is unknown, you have been warned.
+[    3.603957] bcm2835-audio bcm2835-audio: card created with 8 channels
+[    3.605183] mc: Linux media interface: v0.10
+[    3.606045] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    3.611216] rpi-gpiomem fe200000.gpiomem: window base 0xfe200000 size 0x00001000
+[    3.611396] rpi-gpiomem fe200000.gpiomem: initialised 1 regions as /dev/gpiomem
+[    3.612987] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    3.656448] videodev: Linux video capture interface: v2.00
+[    3.657534] brcmstb-i2c fef04500.i2c:  @97500hz registered in polling mode
+[    3.659102] vc4-drm gpu: bound fe400000.hvs (ops vc4_hvs_ops [vc4])
+[    3.660453] brcmstb-i2c fef09500.i2c:  @97500hz registered in polling mode
+[    3.663566] Registered IR keymap rc-cec
+[    3.663791] rc rc0: vc4-hdmi-0 as /devices/platform/soc/fef00700.hdmi/rc/rc0
+[    3.663921] input: vc4-hdmi-0 as /devices/platform/soc/fef00700.hdmi/rc/rc0/input4
+[    3.666692] input: vc4-hdmi-0 HDMI Jack as /devices/platform/soc/fef00700.hdmi/sound/card1/input5
+[    3.667846] vc4-drm gpu: bound fef00700.hdmi (ops vc4_hdmi_ops [vc4])
+[    3.671459] Registered IR keymap rc-cec
+[    3.671572] rc rc1: vc4-hdmi-1 as /devices/platform/soc/fef05700.hdmi/rc/rc1
+[    3.671704] input: vc4-hdmi-1 as /devices/platform/soc/fef05700.hdmi/rc/rc1/input6
+[    3.674617] input: vc4-hdmi-1 HDMI Jack as /devices/platform/soc/fef05700.hdmi/sound/card2/input7
+[    3.674908] vc4-drm gpu: bound fef05700.hdmi (ops vc4_hdmi_ops [vc4])
+[    3.676388] vc4-drm gpu: bound fe004000.txp (ops vc4_txp_ops [vc4])
+[    3.677674] vc4-drm gpu: bound fe206000.pixelvalve (ops vc4_crtc_ops [vc4])
+[    3.679598] vc4-drm gpu: bound fe207000.pixelvalve (ops vc4_crtc_ops [vc4])
+[    3.680774] vc4-drm gpu: bound fe20a000.pixelvalve (ops vc4_crtc_ops [vc4])
+[    3.680944] vc4-drm gpu: bound fe216000.pixelvalve (ops vc4_crtc_ops [vc4])
+[    3.681101] vc4-drm gpu: bound fec12000.pixelvalve (ops vc4_crtc_ops [vc4])
+[    3.685198] [drm] Initialized vc4 0.0.0 for gpu on minor 1
+[    3.689485] vc_sm_cma: module is from the staging directory, the quality is unknown, you have been warned.
+[    3.690780] bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+[    3.690797] [vc_sm_connected_init]: start
+[    3.691816] [vc_sm_connected_init]: installed successfully
+[    3.697691] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[    3.724842] bcm2835_isp: module is from the staging directory, the quality is unknown, you have been warned.
+[    3.735447] bcm2835-isp bcm2835-isp: Device node output[0] registered as /dev/video13
+[    3.735769] bcm2835-isp bcm2835-isp: Device node capture[0] registered as /dev/video14
+[    3.736088] bcm2835-isp bcm2835-isp: Device node capture[1] registered as /dev/video15
+[    3.736291] bcm2835-isp bcm2835-isp: Device node stats[2] registered as /dev/video16
+[    3.736308] bcm2835-isp bcm2835-isp: Register output node 0 with media controller
+[    3.736316] bcm2835-isp bcm2835-isp: Register capture node 1 with media controller
+[    3.736327] bcm2835-isp bcm2835-isp: Register capture node 2 with media controller
+[    3.736332] bcm2835-isp bcm2835-isp: Register capture node 3 with media controller
+[    3.748856] bcm2835-isp bcm2835-isp: Device node output[0] registered as /dev/video20
+[    3.749129] bcm2835-isp bcm2835-isp: Device node capture[0] registered as /dev/video21
+[    3.749372] bcm2835-isp bcm2835-isp: Device node capture[1] registered as /dev/video22
+[    3.750133] bcm2835_v4l2: module is from the staging directory, the quality is unknown, you have been warned.
+[    3.751655] bcm2835-isp bcm2835-isp: Device node stats[2] registered as /dev/video23
+[    3.751680] bcm2835-isp bcm2835-isp: Register output node 0 with media controller
+[    3.751687] bcm2835-isp bcm2835-isp: Register capture node 1 with media controller
+[    3.751692] bcm2835-isp bcm2835-isp: Register capture node 2 with media controller
+[    3.751696] bcm2835-isp bcm2835-isp: Register capture node 3 with media controller
+[    3.751854] bcm2835-isp bcm2835-isp: Loaded V4L2 bcm2835-isp
+[    3.756685] bcm2835_codec: module is from the staging directory, the quality is unknown, you have been warned.
+[    3.772741] Console: switching to colour frame buffer device 240x67
+[    3.776002] bcm2835-codec bcm2835-codec: Device registered as /dev/video10
+[    3.776094] bcm2835-codec bcm2835-codec: Loaded V4L2 decode
+[    3.780508] bcm2835-codec bcm2835-codec: Device registered as /dev/video11
+[    3.780537] bcm2835-codec bcm2835-codec: Loaded V4L2 encode
+[    3.796858] vc4-drm gpu: [drm] fb0: vc4drmfb frame buffer device
+[    3.803309] bcm2835-codec bcm2835-codec: Device registered as /dev/video12
+[    3.803342] bcm2835-codec bcm2835-codec: Loaded V4L2 isp
+[    3.806443] bcm2835-codec bcm2835-codec: Device registered as /dev/video18
+[    3.806478] bcm2835-codec bcm2835-codec: Loaded V4L2 image_fx
+[    3.807034] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    3.819382] bcm2835-codec bcm2835-codec: Device registered as /dev/video31
+[    3.819425] bcm2835-codec bcm2835-codec: Loaded V4L2 encode_image
+[    3.824258] Loaded X.509 cert 'benh@debian.org: 577e021cb980e0e820821ba7b54b4961b8b4fadf'
+[    3.824659] Loaded X.509 cert 'romain.perier@gmail.com: 3abbc6ec146e09d1b6016ab9d6cf71dd233f0328'
+[    3.825050] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    3.825426] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    3.892627] rpi-hevc-dec feb00000.codec: Device registered as /dev/video19
+[    3.902427] Bluetooth: Core ver 2.22
+[    3.902541] NET: Registered PF_BLUETOOTH protocol family
+[    3.902547] Bluetooth: HCI device and connection manager initialized
+[    3.902565] Bluetooth: HCI socket layer initialized
+[    3.902574] Bluetooth: L2CAP socket layer initialized
+[    3.902588] Bluetooth: SCO socket layer initialized
+[    3.920171] brcmfmac: F1 signature read @0x18000000=0x15264345
+[    3.923896] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[    3.947540] usbcore: registered new interface driver brcmfmac
+[    4.001648] Bluetooth: HCI UART driver ver 2.3
+[    4.001666] Bluetooth: HCI UART protocol H4 registered
+[    4.001734] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[    4.002034] Bluetooth: HCI UART protocol Broadcom registered
+[    4.003259] hci_uart_bcm serial0-0: supply vbat not found, using dummy regulator
+[    4.003394] hci_uart_bcm serial0-0: supply vddio not found, using dummy regulator
+[    4.251138] brcmfmac: brcmf_c_process_txcap_blob: no txcap_blob available (err=-2)
+[    4.251686] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Aug 29 2023 01:47:08 version 7.45.265 (28bca26 CY) FWID 01-b677b91b
+[    4.356637] Bluetooth: hci0: BCM: chip id 107
+[    4.356877] Bluetooth: hci0: BCM: features 0x2f
+[    4.357952] Bluetooth: hci0: BCM4345C0
+[    4.357970] Bluetooth: hci0: BCM4345C0 (003.001.025) build 0000
+[    4.368477] Bluetooth: hci0: BCM4345C0 'brcm/BCM4345C0.raspberrypi,4-model-b.hcd' Patch
+[    5.048131] Adding 524284k swap on /var/swap.  Priority:-2 extents:6 across:2211840k SS
+[    5.129388] Bluetooth: hci0: BCM: features 0x2f
+[    5.130694] Bluetooth: hci0: BCM43455 37.4MHz Raspberry Pi 3+-0190
+[    5.130710] Bluetooth: hci0: BCM4345C0 (003.001.025) build 0382
+[    5.390208] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    5.390226] Bluetooth: BNEP filters: protocol multicast
+[    5.390239] Bluetooth: BNEP socket layer initialized
+[    5.395728] Bluetooth: MGMT ver 1.23
+[    5.416284] NET: Registered PF_ALG protocol family
+[    6.593513] bcmgenet fd580000.ethernet: configuring instance for external RGMII (RX delay)
+[    6.595580] bcmgenet fd580000.ethernet eth0: Link is Down
+[    6.618550] brcmfmac: brcmf_cfg80211_set_power_mgmt: power save enabled
+[    9.760791] Bluetooth: RFCOMM TTY layer initialized
+[    9.760832] Bluetooth: RFCOMM socket layer initialized
+[    9.760855] Bluetooth: RFCOMM ver 1.11
+[   97.356651] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[   97.464996] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[   97.568265] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[   97.676290] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[   99.299873] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[   99.300194] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[   99.300498] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[   99.300798] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[   99.301099] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[   99.301400] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  108.224334] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  108.328337] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  108.428331] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  108.528332] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  110.152392] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  110.152712] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  110.153015] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  110.153316] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  110.153616] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  110.153916] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  110.154005] warning: `iwconfig' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+[  114.069284] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  114.177227] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  114.281236] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  114.385251] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  116.049325] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  116.049813] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  116.050273] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  116.050726] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  116.051183] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  116.051637] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  120.869426] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  120.977417] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  121.083644] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  121.189376] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  122.808687] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  122.808998] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  122.809296] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  122.809588] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  122.809875] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  122.810162] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  128.089527] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  128.197391] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  128.301458] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  128.405449] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  130.065122] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  130.065606] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  130.066056] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  130.066511] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  130.066960] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  130.067410] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  139.022812] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  139.129495] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  139.233358] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  139.337403] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  140.997008] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  140.997331] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  140.997636] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  140.997941] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  140.998244] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  140.998599] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  144.909547] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  145.017720] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  145.126278] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  145.229114] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  146.828972] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  146.829293] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  146.829594] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  146.829899] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  146.830201] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  146.830505] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  155.785663] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  155.893632] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  155.997672] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  156.101538] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  157.757418] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  157.757734] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  157.758022] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  157.758309] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  157.758597] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  157.758888] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  167.116990] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  167.221078] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  167.321142] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  167.425108] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  169.037695] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  169.038181] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  169.038629] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  169.039077] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  169.039525] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  169.039975] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  183.449667] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  183.557640] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  183.661661] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  183.765717] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  185.429634] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  185.430118] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  185.430569] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  185.431017] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  185.431465] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  185.431911] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  194.920964] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  195.024957] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  195.124958] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  195.224955] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  196.869673] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  196.870162] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  196.870617] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  196.871074] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  196.871533] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  196.871990] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  200.997683] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  201.105636] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  201.209647] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  201.313646] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  202.977683] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  202.978173] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  202.978631] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  202.979090] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  202.979550] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  202.980009] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  207.068986] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  207.172952] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  207.272972] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  207.376943] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  208.996971] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  208.997282] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  208.997584] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  208.997894] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  208.998198] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  208.998499] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  213.109676] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  213.217633] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  213.321647] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  213.425654] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  215.089660] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  215.090143] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  215.090591] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  215.091043] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  215.091492] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  215.091937] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  219.213635] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  219.321650] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  219.425641] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  219.529656] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  221.193692] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  221.194196] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  221.194669] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  221.195144] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  221.195620] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  221.196099] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  228.961816] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  229.069717] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  229.173760] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  229.277668] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  230.941688] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  230.942178] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  230.942630] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  230.943080] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  230.943529] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  230.943979] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  241.957692] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  242.065678] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  242.169722] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  242.273674] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  243.937640] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  243.938118] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  243.938570] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  243.939021] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  243.939475] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  243.939929] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  263.792945] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  263.897000] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  263.996995] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  264.096948] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  265.745660] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  265.746145] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  265.746592] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  265.747039] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  265.747484] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  265.747933] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  270.525643] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  270.633637] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  270.737655] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  270.841650] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  272.505627] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  272.506117] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  272.506567] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  272.507019] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  272.507473] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  272.507922] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  277.740972] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  277.844974] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  277.944980] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  278.045036] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  279.644967] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  279.645285] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  279.645588] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  279.645889] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  279.646189] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  279.646488] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  283.597664] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  283.705719] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  283.809643] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  283.913634] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  285.577583] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  285.578069] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  285.578518] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  285.578970] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  285.579417] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  285.579864] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  294.504942] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  294.608936] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  294.709006] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  294.808950] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  296.457632] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  296.458119] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  296.458566] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  296.459016] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  296.459461] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  296.459908] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  305.405042] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  305.508970] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  305.609008] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  305.708977] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  307.308965] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  307.309282] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  307.309586] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  307.309886] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  307.310186] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  307.310485] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  311.229619] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  311.337619] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  311.441617] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  311.545614] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  313.209612] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  313.210095] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  313.210536] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  313.210980] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  313.211427] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  313.211875] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  317.353653] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  317.461618] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  317.565631] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  317.669653] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  319.333611] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  319.334086] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  319.334526] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  319.334961] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  319.335402] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  319.335840] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  323.440957] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  323.544944] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  323.644948] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  323.744945] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  325.369671] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  325.370156] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  325.370605] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  325.371057] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  325.371507] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  325.371957] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  329.481646] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  329.589605] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  329.693634] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  329.797639] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  331.461764] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  331.462280] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  331.462763] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  331.463240] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  331.463715] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  331.464191] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  335.581687] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  335.689624] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  335.793703] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  335.897669] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  337.561646] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  337.562128] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  337.562571] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  337.563032] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  337.563475] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  337.563921] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  344.941689] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  345.049686] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  345.153660] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  345.257643] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  346.921741] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  346.922228] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  346.922679] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  346.923131] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  346.923584] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  346.924035] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  357.957646] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  358.065682] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  358.169671] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  358.273629] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  359.937633] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  359.938110] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  359.938561] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  359.939009] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  359.939457] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  359.939908] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  376.965670] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  377.073647] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  377.177631] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  377.281652] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  378.945805] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  378.946290] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  378.946737] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  378.947183] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  378.947626] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  378.948071] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  404.977676] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  405.085624] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  405.189617] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  405.293622] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  406.957639] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  406.958125] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  406.958571] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  406.959018] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  406.959462] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  406.959907] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  446.993675] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  447.101640] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  447.205612] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  447.309646] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  448.973638] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  448.974130] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  448.974578] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  448.975029] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  448.975479] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  448.975929] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[  509.544957] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[  509.648955] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[  509.748963] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[  509.848961] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[  511.473643] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[  511.474125] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[  511.474577] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[  511.475024] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[  511.475479] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[  511.475982] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2213.278766] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2213.386768] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2213.490748] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2213.594769] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2215.258848] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2215.259331] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2215.259781] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2215.260229] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2215.260680] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2215.261135] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2224.227201] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2224.331614] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2224.434254] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2224.534216] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2226.134208] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2226.134522] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2226.134817] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2226.135113] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2226.135409] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2226.135705] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2230.055015] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2230.170938] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2230.274938] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2230.378979] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2232.043017] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2232.043506] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2232.043958] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2232.044405] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2232.044869] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2232.045321] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2236.178981] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2236.287074] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2236.391061] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2236.495017] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2238.159056] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2238.159542] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2238.159991] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2238.160442] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2238.160890] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2238.161335] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2242.258401] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2242.362444] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2242.462432] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2242.562405] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2244.163074] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2244.163559] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2244.164011] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2244.164465] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2244.164918] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2244.165366] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2248.295147] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2248.403157] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2248.507157] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2248.611150] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2250.275177] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2250.275664] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2250.276112] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2250.276562] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2250.277008] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2250.277456] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2254.407252] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2254.515220] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2254.619219] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2254.723212] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2256.387225] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2256.387699] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2256.388146] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2256.388591] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2256.389037] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2256.389481] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2263.963308] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2264.071383] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2264.175290] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2264.279304] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2265.943355] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2265.943839] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2265.944293] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2265.944749] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2265.945203] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2265.945655] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2276.979496] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2277.087455] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2277.191440] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2277.295482] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2278.959521] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2278.960017] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2278.960486] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2278.960964] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2278.961413] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2278.961860] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2295.987714] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2296.095666] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2296.199652] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2296.303651] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2297.967652] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2297.968141] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2297.968580] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2297.971683] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2297.972227] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2297.972690] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2323.995989] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2324.103938] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2324.207945] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2324.311939] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2325.975972] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2325.976469] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2325.976924] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2325.977373] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2325.977823] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2325.978274] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2366.976417] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2367.084387] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2367.188362] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2367.292356] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2368.956368] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2368.956856] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2368.957311] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2368.957767] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2368.958219] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2368.958670] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2429.976973] brcmfmac: brcmf_set_channel: set chanspec 0xd022 fail, reason -52
+[ 2430.085000] brcmfmac: brcmf_set_channel: set chanspec 0xd026 fail, reason -52
+[ 2430.188958] brcmfmac: brcmf_set_channel: set chanspec 0xd02a fail, reason -52
+[ 2430.292966] brcmfmac: brcmf_set_channel: set chanspec 0xd02e fail, reason -52
+[ 2431.956969] brcmfmac: brcmf_set_channel: set chanspec 0xd090 fail, reason -52
+[ 2431.957460] brcmfmac: brcmf_set_channel: set chanspec 0xd095 fail, reason -52
+[ 2431.957910] brcmfmac: brcmf_set_channel: set chanspec 0xd099 fail, reason -52
+[ 2431.958365] brcmfmac: brcmf_set_channel: set chanspec 0xd09d fail, reason -52
+[ 2431.958821] brcmfmac: brcmf_set_channel: set chanspec 0xd0a1 fail, reason -52
+[ 2431.959271] brcmfmac: brcmf_set_channel: set chanspec 0xd0a5 fail, reason -52
+[ 2602.395392] vc4-drm gpu: swiotlb buffer is full (sz: 524288 bytes), total 32768 (slots), used 1500 (slots)
+[ 2602.440482] vc4-drm gpu: swiotlb buffer is full (sz: 524288 bytes), total 32768 (slots), used 1502 (slots)
+[ 2602.441607] vc4-drm gpu: swiotlb buffer is full (sz: 1048576 bytes), total 32768 (slots), used 66 (slots)
+[ 2602.466762] vc4-drm gpu: swiotlb buffer is full (sz: 1048576 bytes), total 32768 (slots), used 66 (slots)
+[ 3221.949434] mempolicy: Request to set policy to 5 ignored
+[ 3221.949448] mempolicy: Request to set policy to 3 ignored
+[ 3222.152757] mempolicy: Request to set policy to 5 ignored
+[ 3222.152773] mempolicy: Request to set policy to 3 ignored
+[ 3222.219337] mempolicy: Request to set policy to 5 ignored
+[ 3222.219353] mempolicy: Request to set policy to 3 ignored
+[ 3222.284407] mempolicy: Request to set policy to 5 ignored
+[ 3222.284422] mempolicy: Request to set policy to 3 ignored
+[ 3222.344621] mempolicy: Request to set policy to 5 ignored
+[ 3222.344636] mempolicy: Request to set policy to 3 ignored
+[ 3222.507818] mempolicy: Request to set policy to 5 ignored
+[ 3222.507833] mempolicy: Request to set policy to 3 ignored
+[ 3222.615123] mempolicy: Request to set policy to 5 ignored
+[ 3222.615138] mempolicy: Request to set policy to 3 ignored
+[ 3222.771592] mempolicy: Request to set policy to 5 ignored
+[ 3222.771606] mempolicy: Request to set policy to 3 ignored
+[ 3222.877283] mempolicy: Request to set policy to 5 ignored
+[ 3222.877298] mempolicy: Request to set policy to 3 ignored
+[ 3222.933999] mempolicy: Request to set policy to 5 ignored
+[ 3222.934014] mempolicy: Request to set policy to 3 ignored
+[ 3222.992284] mempolicy: Request to set policy to 5 ignored
+[ 3222.992298] mempolicy: Request to set policy to 3 ignored
+[ 3223.041241] mempolicy: Request to set policy to 5 ignored
+[ 3223.041256] mempolicy: Request to set policy to 3 ignored
+[ 3223.089704] mempolicy: Request to set policy to 5 ignored
+[ 3223.089719] mempolicy: Request to set policy to 3 ignored
+[ 3223.152590] mempolicy: Request to set policy to 5 ignored
+[ 3223.152605] mempolicy: Request to set policy to 3 ignored
+[ 3223.257864] mempolicy: Request to set policy to 5 ignored
+[ 3223.257879] mempolicy: Request to set policy to 3 ignored
+[ 3223.319508] mempolicy: Request to set policy to 5 ignored
+[ 3223.319523] mempolicy: Request to set policy to 3 ignored
+[ 3223.379051] mempolicy: Request to set policy to 5 ignored
+[ 3223.379065] mempolicy: Request to set policy to 3 ignored
+[ 3223.489305] mempolicy: Request to set policy to 5 ignored
+[ 3223.489320] mempolicy: Request to set policy to 3 ignored
+[ 3223.554018] mempolicy: Request to set policy to 5 ignored
+[ 3223.554032] mempolicy: Request to set policy to 3 ignored
+[ 3223.659567] mempolicy: Request to set policy to 5 ignored
+[ 3223.659583] mempolicy: Request to set policy to 3 ignored
+[ 3223.716056] mempolicy: Request to set policy to 5 ignored
+[ 3223.716071] mempolicy: Request to set policy to 3 ignored
+[ 3223.951661] mempolicy: Request to set policy to 5 ignored
+[ 3223.951676] mempolicy: Request to set policy to 3 ignored
+[ 3223.999131] mempolicy: Request to set policy to 5 ignored
+[ 3223.999149] mempolicy: Request to set policy to 3 ignored
+[ 3224.055335] mempolicy: Request to set policy to 5 ignored
+[ 3224.055350] mempolicy: Request to set policy to 3 ignored
+[ 3224.199212] mempolicy: Request to set policy to 5 ignored
+[ 3224.199228] mempolicy: Request to set policy to 3 ignored
+[ 3224.307140] mempolicy: Request to set policy to 5 ignored
+[ 3224.307156] mempolicy: Request to set policy to 3 ignored
+[ 3224.363876] mempolicy: Request to set policy to 5 ignored
+[ 3224.363891] mempolicy: Request to set policy to 3 ignored
+[ 3224.422319] mempolicy: Request to set policy to 5 ignored
+[ 3224.422334] mempolicy: Request to set policy to 3 ignored
+[ 3224.478747] mempolicy: Request to set policy to 5 ignored
+[ 3224.478762] mempolicy: Request to set policy to 3 ignored
+[ 3224.534817] mempolicy: Request to set policy to 5 ignored
+[ 3224.534833] mempolicy: Request to set policy to 3 ignored
+[ 3224.589044] mempolicy: Request to set policy to 5 ignored
+[ 3224.589058] mempolicy: Request to set policy to 3 ignored
+[ 3224.645263] mempolicy: Request to set policy to 5 ignored
+[ 3224.645278] mempolicy: Request to set policy to 3 ignored
+[ 3224.706931] mempolicy: Request to set policy to 5 ignored
+[ 3224.706946] mempolicy: Request to set policy to 3 ignored
+[ 3224.764149] mempolicy: Request to set policy to 5 ignored
+[ 3224.764164] mempolicy: Request to set policy to 3 ignored
+[ 3224.821020] mempolicy: Request to set policy to 5 ignored
+[ 3224.821035] mempolicy: Request to set policy to 3 ignored
+[ 3224.899192] mempolicy: Request to set policy to 5 ignored
+[ 3224.899207] mempolicy: Request to set policy to 3 ignored
+[ 3224.955646] mempolicy: Request to set policy to 5 ignored
+[ 3224.955661] mempolicy: Request to set policy to 3 ignored
+[ 3225.012279] mempolicy: Request to set policy to 5 ignored
+[ 3225.012294] mempolicy: Request to set policy to 3 ignored
+[ 3225.070860] mempolicy: Request to set policy to 5 ignored
+[ 3225.070875] mempolicy: Request to set policy to 3 ignored
+[ 3225.128856] mempolicy: Request to set policy to 5 ignored
+[ 3225.128871] mempolicy: Request to set policy to 3 ignored
+[ 3225.185971] mempolicy: Request to set policy to 5 ignored
+[ 3225.185987] mempolicy: Request to set policy to 3 ignored
+[ 3225.253203] mempolicy: Request to set policy to 5 ignored
+[ 3225.253218] mempolicy: Request to set policy to 3 ignored
+
+EEPROM
+------
+
+*** UPDATE AVAILABLE ***
+
+Run "sudo rpi-eeprom-update -a" to install this update now.
+
+To configure the bootloader update policy run "sudo raspi-config"
+
+BOOTLOADER: update available
+   CURRENT: Thu  3 Sep 12:11:43 UTC 2020 (1599135103)
+    LATEST: Tue 11 Feb 17:00:13 UTC 2025 (1739293213)
+   RELEASE: default (/usr/lib/firmware/raspberrypi/bootloader-2711/default)
+            Use raspi-config to change the release.
+
+  VL805_FW: Dedicated VL805 EEPROM
+     VL805: up to date
+   CURRENT: 000138c0
+    LATEST: 000138c0
