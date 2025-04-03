@@ -1,1 +1,2 @@
-telnetlib3==2.0.4
+PySocks==1.7.1
+xtelnet==2.2.7
