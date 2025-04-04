@@ -6,13 +6,13 @@ from gpiozero.pins.pigpio import PiGPIOFactory  # Optional: Use pigpio for bette
 # Use pigpio if available (better performance), otherwise use default
 try:
     factory = PiGPIOFactory()
-    button = Button(17, pin_factory=factory, bounce_time=0.2)  # Adjust bounce_time if needed
+    button = Button(18, pull_up=True, pin_factory=factory, bounce_time=0.2)  # Adjust bounce_time if needed
     print("Using pigpio backend.")
 except Exception as e:
-    button = Button(17, bounce_time=0.2)
+    button = Button(18, pull_up=True, bounce_time=0.001)
     print("Using default RPi.GPIO backend.")
 
-last_press_time = None
+last_press_time = time.time()
 
 def button_pressed():
     global last_press_time
