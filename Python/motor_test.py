@@ -2,7 +2,7 @@ from gpiozero import PWMOutputDevice
 from time import sleep
 
 # Replace with the GPIO pin connected to your motor's control input (via transistor/MOSFET gate)
-MOTOR_PWM_PIN = 18  # Example GPIO pin (supports hardware PWM)
+MOTOR_PWM_PIN = 25  # Example GPIO pin (supports hardware PWM)
 
 # Set up the PWMOutputDevice
 motor = PWMOutputDevice(MOTOR_PWM_PIN, frequency=1000, active_high=False)  # frequency in Hz

@@ -5,10 +5,11 @@ import time
 GPIO.setmode(GPIO.BCM)
 
 # Set up GPIO 18 as an output pin
-GPIO.setup(18, GPIO.OUT)
+GPIO.setup(25, GPIO.OUT)
 
 # Set GPIO 18 HIGH
-GPIO.output(18, GPIO.HIGH)
+while True:
+    GPIO.output(25, GPIO.LOW)
 
 # Optional: Keep it HIGH for 10 seconds
 # while True:
