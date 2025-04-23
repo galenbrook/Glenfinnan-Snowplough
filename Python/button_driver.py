@@ -4,11 +4,14 @@ import RPi.GPIO as GPIO
 
 class Button_Driver:
     def __init__(self, pin=12):
-        self.button = Button(pin, pull_up=False, bounce_time=0.1)
+        self.button = Button(pin, pull_up=False, bounce_time=0.001)
         self._pressed_callback = None
         self._enabled = False
         print(f"Button successfully set up on pin {pin}.")
-
+    
+    def wait_for_press(self):
+        self.button.wait_for_press()
+    
     def is_pressed(self):
         return self.button.is_pressed
 

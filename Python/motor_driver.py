@@ -76,6 +76,16 @@ class Motor_Driver:
         self.pi.stop()
         self.current_speed = 0
         print("Motor stopped and pigpio resources released.")
+        
+    def test_run(self):
+        try:
+            # self.start_motor(target_speed=40)
+            # time.sleep(5)
+            self.ramp_speed(60, ramp_time=3)
+            time.sleep(12.75)
+            self.ramp_speed(20, ramp_time=2)
+        finally:
+            self.stop()
 
 
 if __name__ == "__main__":
@@ -94,12 +104,5 @@ if __name__ == "__main__":
 #         motor_b.stop()
 
     motor = Motor_Driver()
+    motor.test_run()
 
-    try:
-        motor.start_motor(target_speed=50)
-        #time.sleep(5)
-        motor.ramp_speed(50, ramp_time=5)
-        time.sleep(10)
-        motor.ramp_speed(20, ramp_time=5)
-    finally:
-        motor.stop()

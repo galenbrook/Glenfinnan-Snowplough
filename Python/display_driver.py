@@ -3,6 +3,8 @@ from Exscript.util import start
 from time import sleep
 from subprocess import Popen
 
+finalVideoPath = "/home/glenfinnan/snowplough/Glenfinnan-Snowplough/Media/Snowplough_video.mp4"
+testVideoPath = "/home/glenfinnan/snowplough/Glenfinnan-Snowplough/Media/test_video.mp4"
 
 class Display_Driver():
     """
@@ -14,12 +16,13 @@ class Display_Driver():
     """
     
     def __init__(self, ip="10.166.76.10", username='', pword='', port=1986,
-                 videoPath="/home/glenfinnan/snowplough/Glenfinnan-Snowplough/Media/test_video.mp4"):
+                 videoPath=finalVideoPath):
         self.ip = ip
         self.username = username
         self.pword = pword
         self.port = port
         self.videoPath = videoPath
+        self.conn = None
         
         # These commands are from the Vestel display user manual and are in a format that the software
         # on the display will accept over a valid Telnet connection"
@@ -27,7 +30,7 @@ class Display_Driver():
         self.cmdGetVidState = "GETVIDSTATE\n"
         
 
-    def toggle_display_standby(self):
+    def toggle_standby(self):
         """
         Sends a Telnet command over Ethernet local area network to the display to toggle standby mode.
         If this does not work check that the display is powered on by the switch and that the Ethernet
@@ -37,21 +40,48 @@ class Display_Driver():
         with open('log.txt', 'w') as file:
             try:
                 conn = Telnet(stdout=file)
+                print("Attempting to connect to display via Telnet...")
                 conn.connect(hostname=self.ip, port=self.port)
                 
                 # Ideally would use conn.execute() to actually get feedback from the display
                 # Could not get this to work in time though
-                conn.send(cmd_standby_toggle)
+                print("Sending standby command.")
+                conn.send(self.cmdStandbyToggle)
                                 
-            except:
-                print("Connection attempt failed.")
+            except Exception as exc:
+                print("Connection attempt failed. ", exc)
                 
             finally:
-                print(conn.response)
-                print("Command executed successfully.")
-                conn.close()
+                #print(conn.response)
+                #print("Command executed successfully.")
+                print("Connection closed.")
         
-
+    
+    def enable_hdmi2(self):
+        cmd = Popen(["wlr-randr", "--output", "HDMI-A-1", "--off"])
+        cmd.wait()
+        print("HDMI-1 disabled.")
+        sleep(2)
+        cmd = Popen(["wlr-randr", "--output", "HDMI-A-2", "--on"])
+        cmd.wait()
+        print("HDMI-2 enabled.")
+        sleep(2)
+        cmd = Popen(["wlr-randr", "--output", "HDMI-A-1", "--on"])
+        cmd.wait()
+        print("HDMI-1 enabled.")
+        sleep(2)
+        
+        
+    def enable_hdmi1(self):
+        cmd = Popen(["wlr-randr", "--output", "HDMI-A-2", "--off"])
+        cmd.wait()
+        print("HDMI-2 disabled.")
+        sleep(2)
+        cmd = Popen(["wlr-randr", "--output", "HDMI-A-1", "--on"])
+        cmd.wait()
+        print("HDMI-1 enabled.")
+        
+        
     def play_video(self):
         """
         Spawns a new process which opens VLC media player and plays the video located at the
@@ -59,10 +89,21 @@ class Display_Driver():
         that it is placed in the same file location and given the same name, or that the video path
         in this file is updated to reflect any change.
         """
-        vlcp = Popen(["vlc", "--play-and-exit", self.videoPath, "--fullscreen"])
-        
+        vlcp = Popen(["cvlc", "--play-and-exit", "--no-qt-video-autoresize", self.videoPath, "--fullscreen"])
         # Could add a timer here to make the process exit and the display switch off just before
         # the video finishes in order to avoid the slight moment where the desktop is visible
         # before the display switches off again
         vlcp.wait()
 
+    def run_display(self):
+        #self.toggle_standby()
+        self.play_video()
+        #self.toggle_standby()
+
+if __name__ == '__main__':
+    display = Display_Driver(videoPath=finalVideoPath)
+    # display.enable_hdmi2()
+    # display.toggle_standby()
+    display.run_display()
+    # display.toggle_standby()
+    # display.enable_hdmi1()

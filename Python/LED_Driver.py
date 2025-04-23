@@ -14,22 +14,32 @@ class LED_Driver():
         GPIO.setup(self.pin, GPIO.OUT)
         print(f"LED driver successfully set up on pin {pin}.")
     
-    def LED_on(self):
+    def on(self):
         GPIO.output(self.pin, GPIO.HIGH)
         
-    def LED_off(self):
+    def off(self):
         GPIO.output(self.pin, GPIO.LOW)
     
 #GPIO.cleanup()
         
 if __name__ == "__main__":
-    led1 = LED_Driver(pin=16)
-    led2 = LED_Driver(pin=24)
-    led1.LED_on()
-    led2.LED_on()
+    GPIO.setmode(GPIO.BCM)
+    led1 = LED_Driver(pin=19)
+    led2 = LED_Driver(pin=20)
+    led3 = LED_Driver(pin=12)
+    led4 = LED_Driver(pin=22)
+    led5 = LED_Driver(pin=23)
+    led1.on()
+    led2.on()
+    led3.on()
+    led4.on()
+    led5.on()
     print("LED turned on.")
-    time.sleep(30)
+    time.sleep(60)
     print("LED turned off")
-    led1.LED_off()
-    led2.LED_off()
+    led1.off()
+    led2.off()
+    led3.off()
+    led4.off()
+    led5.off()
     GPIO.cleanup()
