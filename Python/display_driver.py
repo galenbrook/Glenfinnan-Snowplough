@@ -93,12 +93,12 @@ class Display_Driver():
         # Could add a timer here to make the process exit and the display switch off just before
         # the video finishes in order to avoid the slight moment where the desktop is visible
         # before the display switches off again
-        vlcp.wait()
+        # vlcp.wait()
 
     def run_display(self):
-        #self.toggle_standby()
+        self.toggle_standby()
         self.play_video()
-        #self.toggle_standby()
+        self.toggle_standby()
 
 if __name__ == '__main__':
     display = Display_Driver(videoPath=finalVideoPath)

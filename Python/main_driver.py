@@ -62,7 +62,7 @@ class Exhibition_Driver():
         self.LED4.off()
         self.LED1.on()
         # Timestamp 1:33
-        time.sleep(27)
+        time.sleep(37)
         self.LED1.off()
         self.LED2.on()
         # Timestamp 1:45
@@ -75,14 +75,26 @@ class Exhibition_Driver():
         self.LED3.on()
         self.LED4.on()
         self.LED5.on()
-        # Timestamp 4:15
+        # Timestamp 3:45
         time.sleep(30)
         self.LED1.off()
         self.LED2.off()
         self.LED3.off()
         self.LED4.off()
         self.LED5.off()
-        
+    
+    def run_display(self):
+        self.display.toggle_standby()
+        self.display.play_video()
+        time.sleep(199)
+        self.display.toggle_standby()
+    
+    def run_motor(self):
+        self.motor1.run_lap()
+        time.sleep(199)
+        self.motor1.run_lap()
+        self.motor1.stop()
+    
     def run_exhibition(self, useButton=True):
         
         if (useButton):
@@ -91,20 +103,21 @@ class Exhibition_Driver():
             print("Button pressed.")
             
         print("Starting exhibition cycle...")
-        
+     
        ## Whatever we want the exhibition to actually do goes here ##
          
-        displayProc = Process(target=self.display.run_display)
-        motorProc = Process(target=self.motor1.test_run)
-        
+        displayProc = Process(target=self.run_display)
+        motorProc = Process(target=self.run_motor)
         
         time.sleep(1)
+        motorProc.start()
+        
+        time.sleep(19)
         displayProc.start()
         
-        time.sleep(10)
-        motorProc.start()
-
+        # Timestamp 0:04
         time.sleep(4)
+        self.LED3.on()
         # Timestamp 0:30
         time.sleep(30)
         self.LED3.off()
@@ -118,7 +131,7 @@ class Exhibition_Driver():
         self.LED4.off()
         self.LED1.on()
         # Timestamp 1:33
-        time.sleep(27)
+        time.sleep(37)
         self.LED1.off()
         self.LED2.on()
         # Timestamp 1:45
@@ -131,7 +144,7 @@ class Exhibition_Driver():
         self.LED3.on()
         self.LED4.on()
         self.LED5.on()
-        # Timestamp 4:15
+        # Timestamp 3:45
         time.sleep(30)
         self.LED1.off()
         self.LED2.off()
@@ -139,7 +152,9 @@ class Exhibition_Driver():
         self.LED4.off()
         self.LED5.off()
         
+        
         displayProc.join()
+        motorProc.join()
         
         ## End of exhibition cycle code ##
         
@@ -154,7 +169,7 @@ def main():
     print("Starting up main exhibition program.")
     GPIO.setmode(GPIO.BCM)
     exhibition = Exhibition_Driver()
-    useButton = False
+    useButton = True
     
     if(useButton):
         try:
@@ -186,4 +201,5 @@ def main():
         
 if __name__ == "__main__":
     main()
+
 
