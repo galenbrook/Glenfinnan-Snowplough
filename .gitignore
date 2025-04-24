@@ -2,3 +2,5 @@ venv/*
 Media/Snowplough_video.mp4
 logs/*
 Python/log.txt
+*/.lgd-nfy0
+Python/pycache
