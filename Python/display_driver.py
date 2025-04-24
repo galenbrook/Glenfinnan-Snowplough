@@ -23,6 +23,7 @@ class Display_Driver():
         self.port = port
         self.videoPath = videoPath
         self.conn = None
+        self.responses = ["video is on", "video is off"]
         
         # These commands are from the Vestel display user manual and are in a format that the software
         # on the display will accept over a valid Telnet connection"
@@ -39,14 +40,13 @@ class Display_Driver():
         
         with open('log.txt', 'w') as file:
             try:
-                conn = Telnet(stdout=file)
+                self.conn = Telnet(stdout=file)
                 print("Attempting to connect to display via Telnet...")
-                conn.connect(hostname=self.ip, port=self.port)
+                self.conn.connect(hostname=self.ip, port=self.port)
                 
-                # Ideally would use conn.execute() to actually get feedback from the display
-                # Could not get this to work in time though
                 print("Sending standby command.")
-                conn.send(self.cmdStandbyToggle)
+                self.conn.send(self.cmdStandbyToggle)
+                (idx, _) = conn.expect(responses)  # Wait for response from the display
                                 
             except Exception as exc:
                 print("Connection attempt failed. ", exc)
@@ -57,30 +57,66 @@ class Display_Driver():
                 print("Connection closed.")
         
     
-    def enable_hdmi2(self):
-        cmd = Popen(["wlr-randr", "--output", "HDMI-A-1", "--off"])
-        cmd.wait()
-        print("HDMI-1 disabled.")
-        sleep(2)
-        cmd = Popen(["wlr-randr", "--output", "HDMI-A-2", "--on"])
-        cmd.wait()
-        print("HDMI-2 enabled.")
-        sleep(2)
-        cmd = Popen(["wlr-randr", "--output", "HDMI-A-1", "--on"])
-        cmd.wait()
-        print("HDMI-1 enabled.")
-        sleep(2)
+    def _get_video_state(self):
+        print("Sending getVidState command.")
+        self.conn.send(self.cmdGetVidState)
+        (idx, _) = self.conn.expect(self.responses)
+        print(f"Response: {self.responses[idx]}")
+        if (idx == 0):
+            return True
+        elif (idx == 1):
+            return False
+    
+    
+    def switch_on(self):
+        try:
+            self.conn = Telnet()
+            print(self.conn.get_host())
+            
+            print("Attempting to connect to display via Telnet...")
+            self.conn.connect(hostname=self.ip, port=self.port)
+            
+            displayOn = self._get_video_state()
+
+            if (displayOn):
+                print("Display is already on.")  # Don't need to do anything here as display is already on
+            else:
+                print("Switching display on.")
+                print("Sending standby toggle command.")
+                self.conn.send(self.cmdStandbyToggle)
+                            
+        except Exception as exc:
+            print("Connection attempt failed. ", exc)
+            
+        finally:
+            self.conn.close(force=True)
+            print("Connection closed.")
         
         
-    def enable_hdmi1(self):
-        cmd = Popen(["wlr-randr", "--output", "HDMI-A-2", "--off"])
-        cmd.wait()
-        print("HDMI-2 disabled.")
-        sleep(2)
-        cmd = Popen(["wlr-randr", "--output", "HDMI-A-1", "--on"])
-        cmd.wait()
-        print("HDMI-1 enabled.")
-        
+    def switch_off(self):
+        try:
+            self.conn = Telnet()
+            print(self.conn.get_host())
+            
+            print("Attempting to connect to display via Telnet...")
+            self.conn.connect(hostname=self.ip, port=self.port)
+            
+            displayOff = not(self._get_video_state())
+
+            if (displayOff):
+                print("Display is already off.")  # Don't need to do anything here as display is already on
+            else:
+                print("Switching display off.")
+                print("Sending standby toggle command.")
+                self.conn.send(self.cmdStandbyToggle)
+                            
+        except Exception as exc:
+            print("Connection attempt failed. ", exc)
+            
+        finally:
+            self.conn.close(force=True)
+            print("Connection closed.")
+    
         
     def play_video(self):
         """
@@ -90,20 +126,21 @@ class Display_Driver():
         in this file is updated to reflect any change.
         """
         vlcp = Popen(["cvlc", "--play-and-exit", "--no-qt-video-autoresize", self.videoPath, "--fullscreen"])
-        # Could add a timer here to make the process exit and the display switch off just before
-        # the video finishes in order to avoid the slight moment where the desktop is visible
-        # before the display switches off again
-        # vlcp.wait()
+        
+        # Uncomment this if you want file logging for debug purposes
+        #vlcp = Popen(["cvlc", "--play-and-exit", "--file-logging", "--logfile=/home/glenfinnan/snowplough/Glenfinnan-Snowplough/logs/vlc.log","--no-qt-video-autoresize", self.videoPath, "--fullscreen"])
+    
+        # Use the return value if you need to wait for the process to execute
+        return vlcp        
 
     def run_display(self):
-        self.toggle_standby()
-        self.play_video()
-        self.toggle_standby()
+        self.switch_on()
+        
+        vlcp = self.play_video()
+        vlcp.wait()
+        
+        self.switch_off()
 
 if __name__ == '__main__':
-    display = Display_Driver(videoPath=finalVideoPath)
-    # display.enable_hdmi2()
-    # display.toggle_standby()
+    display = Display_Driver(videoPath=testVideoPath)
     display.run_display()
-    # display.toggle_standby()
-    # display.enable_hdmi1()

@@ -75,7 +75,7 @@ class Motor_Driver:
     def run_lap(self):
         try:
             self.ramp_speed(60, ramp_time=3)
-            time.sleep(13.5)
+            time.sleep(13.75)
             self.ramp_speed(0, ramp_time=3)
         except Exception as exc:
             print("Exception occurred: " + exc)

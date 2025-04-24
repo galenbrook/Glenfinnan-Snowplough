@@ -1,2 +1,4 @@
 venv/*
 Media/Snowplough_video.mp4
+logs/*
+Python/log.txt

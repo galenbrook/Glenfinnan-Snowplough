@@ -42,8 +42,11 @@ class Exhibition_Driver():
 
     def cleanup(self):
         print("Cleaning up GPIO pins.")
-#         self.LED1.off()
-#         self.LED2.off()
+        self.LED1.off()
+        self.LED2.off()
+        self.LED3.off()
+        self.LED4.off()
+        self.LED5.off()
         self.motor1.ramp_speed(0, ramp_time=1)
         self.motor1.stop()
         GPIO.cleanup()
@@ -84,10 +87,10 @@ class Exhibition_Driver():
         self.LED5.off()
     
     def run_display(self):
-        self.display.toggle_standby()
+        self.display.switch_on()
         self.display.play_video()
         time.sleep(199)
-        self.display.toggle_standby()
+        self.display.switch_off()
     
     def run_motor(self):
         self.motor1.run_lap()
@@ -111,20 +114,19 @@ class Exhibition_Driver():
         
         time.sleep(1)
         motorProc.start()
+        self.LED3.on()
         
         time.sleep(19)
         displayProc.start()
+        self.LED3.off()
         
         # Timestamp 0:04
         time.sleep(4)
-        self.LED3.on()
-        # Timestamp 0:30
-        time.sleep(30)
-        self.LED3.off()
         self.LED5.on()
+        # Timestamp 0:34
+        time.sleep(30)
         # Timestamp 0:44
         time.sleep(10)
-        self.LED5.off()
         self.LED4.on()
         # Timestamp 0:56
         time.sleep(12)
@@ -135,17 +137,20 @@ class Exhibition_Driver():
         self.LED1.off()
         self.LED2.on()
         # Timestamp 1:45
+        
+        # O gauge train should run here? 
+        
         time.sleep(12)
         self.LED2.off()
-        # Timestamp 3:15
-        time.sleep(90)
+        # Timestamp 3:17
+        time.sleep(92)
         self.LED1.on()
         self.LED2.on()
         self.LED3.on()
         self.LED4.on()
         self.LED5.on()
         # Timestamp 3:45
-        time.sleep(30)
+        time.sleep(50)
         self.LED1.off()
         self.LED2.off()
         self.LED3.off()
