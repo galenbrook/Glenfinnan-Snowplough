@@ -3,4 +3,4 @@ Media/Snowplough_video.mp4
 logs/*
 Python/log.txt
 */.lgd-nfy0
-Python/__pycache__
+Python/__pycache__/*
