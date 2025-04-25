@@ -46,7 +46,7 @@ class Display_Driver():
                 
                 print("Sending standby command.")
                 self.conn.send(self.cmdStandbyToggle)
-                (idx, _) = conn.expect(responses)  # Wait for response from the display
+                (idx, _) = self.conn.expect(responses)  # Wait for response from the display
                                 
             except Exception as exc:
                 print("Connection attempt failed. ", exc)

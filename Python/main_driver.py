@@ -6,6 +6,7 @@ from signal import pause
 from multiprocessing import Process
 import RPi.GPIO as GPIO
 import time
+import datetime
 
 finalVideoPath = "/home/glenfinnan/snowplough/Glenfinnan-Snowplough/Media/Snowplough_video.mp4"
 testVideoPath = "/home/glenfinnan/snowplough/Glenfinnan-Snowplough/Media/test_video.mp4"
@@ -39,7 +40,42 @@ class Exhibition_Driver():
         print("Button press detected. Disabling input.")
         self.button.disable()
         self.run_exhibition()
+        
+    def update_log(self):
+        filepath = "/home/glenfinnan/snowplough/Glenfinnan-Snowplough/logs/stats.log"
+        
+        try:
+            # Read only the first line
+            with open(filepath, "r") as file:
+                first_line = file.readline()
 
+            if not first_line.startswith("Button press count: "):
+                new_first_line = "Button press count: 1\n"
+            
+            else:
+                current_count = int(first_line.strip().split(": ")[1])
+                new_first_line = f"Button press count: {current_count + 1}\n"
+
+            # Overwrite the first line only
+            with open(filepath, "r+") as file:
+                file.write(new_first_line)
+                file.flush()  # Ensure write is committed
+                # Move to end to append timestamp
+                file.seek(0, 2)  # 0 bytes from end of file
+                timestamp = datetime.datetime.now().strftime("[%Y-%m-%d %H:%M:%S] Button was pressed.")
+                file.write(f"{timestamp}\n")
+
+        except FileNotFoundError:
+            # If the file doesn't exist, create it with initial count and timestamp
+            with open(filepath, "w") as file:
+                file.write("Button press count: 1\n")
+                timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S] Button was pressed.")
+                file.write(f"{timestamp}\n")
+
+        except Exception as e:
+            print(f"An error writing stats log occurred: {e}")
+            
+                
     def cleanup(self):
         print("Cleaning up GPIO pins.")
         self.LED1.off()
@@ -93,9 +129,9 @@ class Exhibition_Driver():
         self.display.switch_off()
     
     def run_motor(self):
-        self.motor1.run_lap()
+        self.motor1.run_motor(15)
         time.sleep(199)
-        self.motor1.run_lap()
+        self.motor1.run_motor(15)
         self.motor1.stop()
     
     def run_exhibition(self, useButton=True):
@@ -163,10 +199,12 @@ class Exhibition_Driver():
         
         ## End of exhibition cycle code ##
         
-        print("Exhibition cycle finished.")
+        print("Exhibition cycle finished. Updating logs.")
+        self.update_log()
         
         if (useButton):
             print("Re-enabling button input.")
+        
         # self.button.enable()
         
         

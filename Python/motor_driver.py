@@ -14,6 +14,7 @@ class Motor_Driver:
         self.gpio_pin = gpio_pin
         self.frequency = frequency
         self.current_speed = 0
+        self.lap_time = 14 # Number of seconds to run at 60% speed for approximately 1 lap
 
         self.pi = pigpio.pi()
         if not self.pi.connected:
@@ -72,10 +73,11 @@ class Motor_Driver:
         self.current_speed = 0
         print("Motor stopped and pigpio resources released.")
         
-    def run_lap(self):
+    def run_motor(self, on_time):
         try:
             self.ramp_speed(60, ramp_time=3)
-            time.sleep(13.75)
+            print(f"Running at 60% speed for {on_time} seconds")
+            time.sleep(on_time)
             self.ramp_speed(0, ramp_time=3)
         except Exception as exc:
             print("Exception occurred: " + exc)
@@ -86,4 +88,4 @@ class Motor_Driver:
 # === Example Usage ===
 if __name__ == "__main__":
     motor = Motor_Driver()
-    motor.run_lap()
+    motor.run_motor(motor.lap_time)
